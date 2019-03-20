@@ -4,7 +4,7 @@ define([], function() {
             component: view('home')
         },
         {
-            path: '/Directory',
+            path: '/stores',
             component: view('default'),
             children: [{
                     path: '',
