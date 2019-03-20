@@ -81,6 +81,10 @@
                 "href": "/contact_us"
             },
             {
+                "name": "header.newsletter",
+                "href": "/newsletter"
+            },
+            {
                 "name": "header.leasing",
                 "href": "/pages/sudburycentre-leasing"
             },
