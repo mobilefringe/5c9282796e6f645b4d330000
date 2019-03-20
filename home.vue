@@ -87,6 +87,7 @@
                     var socialFeed = response[4].data;
                     var social_feed = socialFeed.social.instagram;
                     this.instaFeed = _.slice(social_feed, [0], [4]);
+                    console.log(this.instaFeed)
                     
                     this.meta = this.findMetaDataByPath(this.$route.path);
                 });
