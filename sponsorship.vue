@@ -1,9 +1,11 @@
 <template>
-    <div>Helloefwefwe</div>
+    <div v-if>
+        
+    </div>
 </template>
 
 <script>
-    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta"], function(Vue, Vuex, moment, tz, VueMoment, Meta) {
+    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta" "vue!feature_masonry"], function(Vue, Vuex, moment, tz, VueMoment, Meta) {
         Vue.use(Meta);
         return Vue.component("sponsorship", {
             template: template, // the variable template will be injected
