@@ -20,9 +20,19 @@
         ]
     },
     {
-        "name": "header.promos",
-        "href": "/promotions",
-        "id": "promos_link"
+        "name": "header.promos_events",
+        "href": "",
+        "open_dropdown": false,
+        "id": "promos_events_link",
+        "sub_menu": [{
+                "name": "header.events",
+                "href": "/events"
+            },
+            {
+                "name": "header.promos",
+                "href": "/promotions"
+            }
+        ]
     },
     {
         "name": "header.news_events",
