@@ -67,7 +67,7 @@
     </div>
 </template>
 <script>
-    define(["Vue", "vuex", "vue-meta", 'vee-validate', 'utility', "vue!sponsorship"], function(Vue, Vuex, Meta, VeeValidate, Utility) {
+    define(["Vue", "vuex", "vue-meta", 'vee-validate', 'utility', "vue!sponsorship"], function(Vue, Vuex, Meta, VeeValidate, Utility, sponsorship) {
         Vue.use(Meta);
         Vue.use(VeeValidate);
         return Vue.component("contact-us-component", {
