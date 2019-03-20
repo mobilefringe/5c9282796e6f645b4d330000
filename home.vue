@@ -143,7 +143,7 @@
                       
                         if( _.includes([0,6], key) ) {
                             value.masonry_class = "grid-item--height2";
-                            value.image_url = "https://picsum.photos/570/1140?image=98"+key;
+                            value.image_url = "https://via.placeholder.com/570x1140.png"+key;
                         }
                         else if ( _.includes([2,5], key) ){
                             value.masonry_class = "grid-item--width2";
