@@ -1339,9 +1339,9 @@ strong,
 
 .sponsor {
     float: left;
-}
-.sponsor_images {
+    .sponsor_images {
     width: 300px;
+    }
 }
 
 /* HOME PAGE */
