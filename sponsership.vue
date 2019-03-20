@@ -4,7 +4,7 @@
 
 <script>
     define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment"], function(Vue, Vuex, moment, tz, VueMoment) {
-        return Vue.component("sponsorship", {
+        return Vue.component("sponsership", {
             template: template, // the variable template will be injected,
             data: function() {
                 return {
