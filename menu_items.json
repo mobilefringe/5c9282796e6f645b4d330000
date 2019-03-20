@@ -51,6 +51,26 @@
         ]
     },
     {
+        "name": "header.about_us",
+        "href": "",
+        "id": "contact_link",
+        "open_dropdown": false,
+        "sub_menu": [
+            {
+                "name": "header.history",
+                "href": "/pages/shoppersworld-history"
+            },
+            {
+                "name": "header.leasing",
+                "href": "/pages/sudburycentre-leasing"
+            },
+            {
+                "name": "header.employment",
+                "href": "/jobs"
+            }
+        ]
+    },
+    {
         "name": "header.contact_us",
         "href": "",
         "id": "contact_link",
