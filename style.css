@@ -1344,6 +1344,7 @@ strong,
 .sponsor-images img {
     width: 200px;
     float: right;
+    padding: 10px;
 }
 
 /* HOME PAGE */
