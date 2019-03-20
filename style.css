@@ -1337,6 +1337,10 @@ strong,
 
 /* SPONSORSHIP */
 
+.sponsor {
+    margin-bottom: 40px;
+}
+
 .sponsor-images img {
     width: 200px;
     float: right;
