@@ -35,11 +35,6 @@
         ]
     },
     {
-        "name": "header.news_events",
-        "href": "/events",
-        "id": "events_link"
-    },
-    {
         "name": "header.services",
         "href": "",
         "open_dropdown": false,
