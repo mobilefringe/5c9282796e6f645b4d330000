@@ -1338,7 +1338,7 @@ strong,
 /* SPONSORSHIP */
 
 .sponsor div {
-    float: right;
+    float: left;
 }
 
 .sponsor-images img {
