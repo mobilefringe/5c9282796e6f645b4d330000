@@ -11,7 +11,6 @@
 				</div>
 			</div>
 		</div>
-		<sponsorship></sponsorship>
 		<div class="site_container inside_page_content page_content">
             <div class="margin_side_20" >
                 <div class="row event_container"  v-if="accessibilityData"  v-for="promo in accessibilityData">
