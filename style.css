@@ -3725,6 +3725,12 @@ html .feature_item_container {
 	}
 }
 
+@media (max-width: 815px) {
+    .sponsor {
+        text-align: center;
+    }
+}
+
 
 /* Small devices (tablets, 769px and down) */
 
