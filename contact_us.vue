@@ -9,8 +9,8 @@
 				</div>
 			</div>
 		</div>  
-		<sponsorship></sponsorship>
         <div class="margin_25_across padding_top_40 site_container">
+    		<sponsorship></sponsorship>
             <div class="row"> 
                 <div class="col-sm-6 text-left" v-if="currentPage && currentPage.body">
                     <div class="text-left contact_us_body" v-html="currentPage.body"></div>
