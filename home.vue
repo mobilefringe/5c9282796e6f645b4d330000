@@ -143,11 +143,11 @@
                       
                         if( _.includes([0,6], key) ) {
                             value.masonry_class = "grid-item--height2";
-                            value.image_url = "https://via.placeholder.com/219x438.png" +key;
+                            value.image_url = "https://via.placeholder.com/219x438.png";
                         }
                         else if ( _.includes([2,5], key) ){
                             value.masonry_class = "grid-item--width2";
-                            value.image_url = "https://via.placeholder.com/219x219.png" +key;
+                            value.image_url = "https://via.placeholder.com/219x219.png";
                         }
                         else {
                             value.masonry_class = " ";
