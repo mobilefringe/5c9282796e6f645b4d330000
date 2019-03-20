@@ -1,16 +1,16 @@
 [
     {
-        "name": "header.stores",
+        "name": "header.directory",
         "href": "",
         "open_dropdown": false,
         "id": "stores_link",
         "sub_menu": [{
-                "name": "header.directory",
+                "name": "header.stores",
                 "href": "/stores"
             },
             
             {
-                "name": "header.restaurants",
+                "name": "header.dining",
                 "href": "/restaurants"
             },
             {
