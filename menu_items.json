@@ -67,6 +67,10 @@
             {
                 "name": "header.awards",
                 "href": "/pages/shoppersworld-awards"
+            },
+            {
+                "name": "header.press_releases",
+                "href": "/pages/shoppersworld-press-releases"
             }
         ]
     },
@@ -85,13 +89,13 @@
                 "href": "/newsletter"
             },
             {
-                "name": "header.leasing",
-                "href": "/pages/sudburycentre-leasing"
-            },
-            {
                 "name": "header.employment",
                 "href": "/jobs"
             }
+            {
+                "name": "header.leasing",
+                "href": "/pages/sudburycentre-leasing"
+            },
         ]
     },
     {
