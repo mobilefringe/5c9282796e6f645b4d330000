@@ -9,7 +9,7 @@
 			</div>
 		</div>
 		<div class="site_container">
-		    sponsorship
+		    
 			<div class="row">
 				<div class="col-sm-12 promo_image_container text-left">
 					<router-link to="/events"><i class="fa fa-angle-left"></i> &nbsp; {{$t("events_page.back_to_events")}}</router-link>
@@ -44,7 +44,7 @@
 </template>
 
 <script>
-    define(['Vue', 'vuex', 'moment', 'vue-lazy-load'], function(Vue, Vuex, moment, VueLazyload) {
+    define(['Vue', 'vuex', 'moment', 'vue-lazy-load', "vue!sponsorship"], function(Vue, Vuex, moment, VueLazyload, sponsorship) {
         Vue.use(VueLazyload);
         return Vue.component("event-details-component", {
             template: template, // the variable template will be injected,
