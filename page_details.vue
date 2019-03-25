@@ -12,6 +12,7 @@
 			</div>
 		</div>
 		<div class="site_container inside_page_content page_content">
+		    <sponsorship></sponsorship>
             <div class="margin_side_20" >
                 <div class="row event_container"  v-if="accessibilityData"  v-for="promo in accessibilityData">
 					<div class="col-sm-12 col-md-12 event_dets_container">
@@ -53,7 +54,7 @@
     }
 </style>
 <script>
-    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment"], function(Vue, Vuex, moment, tz, VueMoment) {
+    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue!sponsorship"], function(Vue, Vuex, moment, tz, VueMoment, sponsorship) {
         return Vue.component("page-details-component", {
             template: template, // the variable template will be injected,
             data: function() {
