@@ -2315,7 +2315,7 @@ strong,
 				-ms-transform: translate(-50%, -50%);
 				width: 100%;
 				font-size: 1.75rem;
-				color: $primary;
+				color: $accent;
 				text-align: center;
 			}
 		}
@@ -2341,7 +2341,7 @@ strong,
 	margin-bottom: 0;
 	font-size: 2.25rem;
 	line-height: 40px;
-	color: $primary;
+	color: $accent;
 }
 
 .store_details_categories {
