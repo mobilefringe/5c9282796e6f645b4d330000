@@ -187,13 +187,13 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
                 }
 
             },
-            toggleSubMenu (name) {
-               this.menu_items.map(menu => {
-                    if(menu.name !== name) {
-                        menu.show_sub_menu = false;
-                    }
-                });
-            },
+            // toggleSubMenu (name) {
+            //   this.menu_items.map(menu => {
+            //         if(menu.name !== name) {
+            //             menu.show_sub_menu = false;
+            //         }
+            //     });
+            // },
             shareURL(page,slug){
                 console.log("page, slug", page, slug)
                 var share_url= "http://www.shoppersmallbrandon.com/" + page + "/" + slug;
