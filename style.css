@@ -2231,7 +2231,7 @@ strong,
 		-webkit-transform: translate(-50%, -50%);
 		-ms-transform: translate(-50%, -50%);
 		transform: translate(-50%, -50%);
-		color: $accent;
+		color: #000;
 		text-transform: uppercase;
 		font-weight: 600;
 		-webkit-font-smoothing: antialiased;
