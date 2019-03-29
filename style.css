@@ -1349,6 +1349,10 @@ strong,
     padding: 10px;
 }
 
+.sponsor_container {
+    width: 100%;
+}
+
 /* HOME PAGE */
 
 .home-banner-container {
