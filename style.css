@@ -243,10 +243,10 @@ a {
 	&:hover {
 		text-decoration: underline;
 		cursor: pointer;
-		color: $primary;
+		color: $accent;
 	}
 	&:focus {
-		color: $primary;
+		color: $accent;
 	}
 }
 
