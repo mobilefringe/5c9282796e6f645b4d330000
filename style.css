@@ -4342,6 +4342,7 @@ html .feature_item_container {
 	}
 	.sponsor {
 	    flex-direction: column;
+	    justify-content: center
 	}
 }
 
