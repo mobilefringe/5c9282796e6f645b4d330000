@@ -743,7 +743,7 @@ strong,
 						font-size: 0.8rem;
 						font-family: Avenir-Book;
 						&.highlighted {
-							background: $primary;
+							background: $accent;
 							color: #FFF;
 						}
 					}
@@ -833,7 +833,7 @@ strong,
 #searchResults {
 	margin: 30px auto;
 	.result_link {
-		color: $primary;
+		color: $accent;
 		&:hover {
 			text-decoration: none;
 		}
@@ -1376,7 +1376,7 @@ strong,
 		-ms-transform: translate(-50%, -50%);
 		font-family: 'Futura-Light';
 		font-size: 9.5vw;
-		color: $primary;
+		color: $accent;
 		text-align: center;
 		text-transform: uppercase;
 	}
@@ -1692,14 +1692,14 @@ strong,
 	width: 90px;
 	height: 1px;
 	margin: 0 0 24px;
-	background-color: $primary;
+	background-color: $accent;
 }
 
 .thick_line_center {
 	width: 90px;
 	height: 1px;
 	margin: 0 auto 24px auto;
-	background-color: $primary;
+	background-color: $accent;
 }
 
 #mm_page_content p a {
@@ -2146,7 +2146,7 @@ strong,
 		right: 0;
 		left: auto;
 		height: 21px;
-		background-color: $primary;
+		background-color: $accent;
 		.store_tag_text {
 			padding: 6px 0;
 			width: 108px;
@@ -2184,7 +2184,7 @@ strong,
 		}
 	}
 	&:hover {
-		background: $primary;
+		background: $accent;
 		.store_img {
 			display: block;
 			-webkit-filter: blur(2px);
@@ -2355,7 +2355,7 @@ strong,
 
 .black_divider {
 	margin: 20px 0;
-	border-top: 1px solid $primary;
+	border-top: 1px solid $accent;
 }
 
 .store_details_icon {
@@ -2467,7 +2467,7 @@ strong,
 
 .back_btn:hover,
 .next_btn:hover {
-	color: $primary;
+	color: $accent;
 }
 
 .back_btn img,
@@ -2572,13 +2572,13 @@ strong,
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		display: inline-block;
-		border: 1px solid $primary;
+		border: 1px solid $accent;
 		div {
 			display: inline-block;
 			transition: all ease 0.3s;
 			padding: 10px;
 			&:hover {
-				background-color: $primary;
+				background-color: $accent;
 				color: #fff;
 			}
 		}
@@ -2672,7 +2672,7 @@ strong,
 	-webkit-transform: translate(-50%, 10%);
 	-ms-transform: translate(-50%, 10%);
 	transform: translate(-50%, 10%);
-	background: $primary;
+	background: $accent;
 	border: 0;
 	color: #fff;
 	font-size: 1.25rem;
@@ -2683,7 +2683,7 @@ strong,
 .store_details_btn {
 	margin-bottom: 20px;
 	padding: 17px 30px;
-	background: $primary;
+	background: $accent;
 	font-size: 1.25rem;
 	color: #fff;
 	text-align: center;
@@ -2878,7 +2878,7 @@ iframe.station_41 {
 .directory_list::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-	background-color: $primary;
+	background-color: $accent;
 }
 
 .map_container {
