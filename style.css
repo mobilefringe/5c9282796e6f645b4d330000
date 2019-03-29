@@ -1613,9 +1613,9 @@ strong,
 				padding-right: 70px;
 			}
 			a {
-				background-color: $primary;
+				background-color: rgb(226, 70, 70);
 				color: #fff;
-				border: 2px solid $primary;
+				border: 2px solid rgb(226, 70, 70);
 				position: absolute;
 				top: 0;
 				right: 0;
