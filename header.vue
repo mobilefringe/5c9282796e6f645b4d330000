@@ -151,7 +151,7 @@
                 return {
                     dataLoaded: false,
                     show_mobile_menu: false,
-                    property_logo: "//codecloud.cdn.speedyrails.net/sites/5c9282796e6f645b4d330000/image/png/1553890326138/logo-black.png",
+                    property_logo: "//codecloud.cdn.speedyrails.net/sites/5c54b7e46e6f6447f2000000/image/png/1550177175366/new-sudbury-logo-large.png",
                     menu_items: MenuItems,
                     showSearch: true,
                     search_result: null,
