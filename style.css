@@ -1339,7 +1339,7 @@ strong,
 
 .sponsor {
     margin-bottom: 40px;
-    text-align: right;
+    flex-direction: row;
 }
 
 .sponsor-images img {
