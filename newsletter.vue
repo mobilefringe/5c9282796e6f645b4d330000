@@ -12,7 +12,7 @@
             <div class="row"> 
                 <div class="col-md-12 contact_contents">
                     <form  class="form-horizontal js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A124F5357173781B1056D924E694242F2413242981A3E38F729032322E1421780E5AFF1CA71953B960F79CC08689700B6"
-                    id="subForm" action="form-submit" v-on:submit.prevent="validateBeforeSubmit">
+                    id="subForm" v-on:submit.prevent="validateBeforeSubmit">
                         <div class="form-group ">
                             <div class="col-sm-6 col-xs-12" >
                                 <label class="label" for="cm-name">{{$t("newsletter_page.name")}}</label>
