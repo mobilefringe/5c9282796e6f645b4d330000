@@ -31,7 +31,7 @@
 				</div>
 			</div>
 			<hr class="green_hr">
-			<div class="row margin_30">
+			<div class="row margin_30 pink_line">
 				<div class="col-sm-4">
 					<div class="text-center">
 					    <h3 class="event_store_name caps" v-if="locale=='fr-ca'">{{currentStore.name_2}}</h3>
