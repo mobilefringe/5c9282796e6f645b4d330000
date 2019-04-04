@@ -11,7 +11,7 @@
             <sponsorship></sponsorship>
             <div class="row"> 
                 <div class="col-md-12 contact_contents">
-                    <form  class="form-horizontal js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post">
+                    <form class="form-horizontal js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post">
                     id="subForm" action="form-submit" v-on:submit.prevent="validateBeforeSubmit"
                         <div class="form-group ">
                             <div class="col-sm-6 col-xs-12" >
@@ -48,7 +48,6 @@
                         <span class="sr-only">{{$t("newsletter_page.error")}} : </span>
                         {{$t("newsletter_page.error_message")}}
                     </div>
-                    
                 </div>
             </div>
             <div class="padding_top_40"></div>    
