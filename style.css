@@ -3775,6 +3775,10 @@ html .feature_item_container {
 	.hidden_phone {
 		display: none !important;
 	}
+	.site_container .visible_phone {
+	    display: none;
+	}
+	
 	.visible_phone {
 		display: block;
 	}
