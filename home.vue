@@ -192,11 +192,11 @@
                         // else {
                         //     value.mobile_order = key + 1;
                         // }
-                        if(key == 2) {
-                            value.mobile_order = 5;
+                        if(key == 1) {
+                            value.mobile_order = 6;
                         }
-                        else if(key == 5) {
-                            value.mobile_order = 2;
+                        else if(key == 6) {
+                            value.mobile_order = 1;
                         }
                         else {
                             value.mobile_order = key;
