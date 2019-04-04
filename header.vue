@@ -46,7 +46,7 @@
     						<nav id="mobile_nav" v-show="show_mobile_menu">
     							<ul>
     								<div class="mobile_menu_site_logo">
-    									<router-link to="/"><img src="//codecloud.cdn.speedyrails.net/sites/5c9282796e6f645b4d330000/image/png/1554391200806/ShoppersMall-01-White-Menu.png" :alt="property.name +' Mobile Logo'"/></router-link>
+    									<router-link to="/"><img src="//codecloud.cdn.speedyrails.net/sites/5c9282796e6f645b4d330000/image/png/1554390402001/1116960616920929.2H7zV1gI4pZYWxo6NOtl_height640.png" :alt="property.name +' Mobile Logo'"/></router-link>
     								</div>
     								<li v-for="(item,key) in menu_items" class="menu_item">
     								<span @click="closeMobileMenu()" v-if="item.sub_menu == undefined">
