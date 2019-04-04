@@ -4288,6 +4288,9 @@ html .feature_item_container {
 	.slick-dots {
 		bottom: -5px;
 	}
+	.pink_line .visible_phone {
+        display: none;
+    }
 }
 
 @media (max-width: 767px) {
