@@ -11,7 +11,7 @@
             <sponsorship></sponsorship>
             <div class="row"> 
                 <div class="col-md-12 contact_contents">
-                    <form class="form-horizontal js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A124F5357173781B1056D924E694242F2413242981A3E38F729032322E1421780E5AFF1CA71953B960F79CC08689700B6" v-on:submit.prevent="validateBeforeSubmit">
+                    <form class="form-horizontal js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A124F5357173781B1056D924E694242F2413242981A3E38F729032322E1421780E5AFF1CA71953B960F79CC08689700B6">
                         <div class="form-group ">
                             <div class="col-sm-6 col-xs-12" >
                                 <label class="label" for="cm-name">{{$t("newsletter_page.name")}}</label>
@@ -37,16 +37,16 @@
                         </div>
                     </form>
                     
-                    <div id="send_contact_success" class="alert alert-success" role="alert" v-show="formSuccess">
-                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                        <span class="sr-only">{{$t("newsletter_page.success")}} : </span>
-                        {{$t("newsletter_page.thank_you_message")}}
-                    </div>
-                    <div id="send_contact_error" class="alert alert-danger" role="alert" v-show="formError">
-                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-                        <span class="sr-only">{{$t("newsletter_page.error")}} : </span>
-                        {{$t("newsletter_page.error_message")}}
-                    </div>
+                    <!--<div id="send_contact_success" class="alert alert-success" role="alert" v-show="formSuccess">-->
+                    <!--    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>-->
+                    <!--    <span class="sr-only">{{$t("newsletter_page.success")}} : </span>-->
+                    <!--    {{$t("newsletter_page.thank_you_message")}}-->
+                    <!--</div>-->
+                    <!--<div id="send_contact_error" class="alert alert-danger" role="alert" v-show="formError">-->
+                    <!--    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>-->
+                    <!--    <span class="sr-only">{{$t("newsletter_page.error")}} : </span>-->
+                    <!--    {{$t("newsletter_page.error_message")}}-->
+                    <!--</div>-->
                     
                 </div>
             </div>
