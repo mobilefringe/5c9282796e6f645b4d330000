@@ -3775,9 +3775,6 @@ html .feature_item_container {
 	.hidden_phone {
 		display: none !important;
 	}
-	.site_container .visible_phone {
-	    display: none;
-	}
 	.visible_phone {
 		display: block;
 	}
@@ -4291,6 +4288,15 @@ html .feature_item_container {
 	.slick-dots {
 		bottom: -5px;
 	}
+}
+
+@media (max-width: 767px) {
+    .green_line .visible_phone {
+        display: block;
+    }
+    .map {
+        left: 0px;
+    }
 }
 
 
