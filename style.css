@@ -4291,6 +4291,10 @@ html .feature_item_container {
 	.pink_line .visible_phone {
         display: none;
     }
+    .store_map {
+        position: relative;
+        left: 125px;
+    }
 }
 
 @media (max-width: 767px) {
