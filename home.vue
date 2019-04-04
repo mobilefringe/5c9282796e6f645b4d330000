@@ -193,9 +193,9 @@
                         //     value.mobile_order = key + 1;
                         // }
                         if(key == 3) {
-                            value.mobile_order = 6;
+                            value.mobile_order = 7;
                         }
-                        else if(key == 6) {
+                        else if(key == 7) {
                             value.mobile_order = 3;
                         }
                         else {
