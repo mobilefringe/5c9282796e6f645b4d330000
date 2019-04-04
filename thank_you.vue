@@ -9,7 +9,8 @@
 			</div>
 		</div>
         <div class="row site_container">
-            Your subscription has been confirmed. You've been added to our list and will hear from us soon.
+            <h2>Thank You!</h2>
+            <p>Your subscription has been confirmed. You've been added to our list and will hear from us soon.</p>
         </div>
     </div>
 </template>
