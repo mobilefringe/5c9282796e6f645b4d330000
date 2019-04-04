@@ -4003,6 +4003,9 @@ html .feature_item_container {
 		&>div {
 			width: 50%;
 		}
+		.site_logo img {
+		    max-width: 200px;
+		}
 		img {
 			max-width: 100px;
 		}
