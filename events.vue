@@ -28,7 +28,7 @@
                                         <h2 class="store_details_name">{{ promo.store.name }}</h2>
                                     </div>    
                                 </div>
-                                <img v-else class="center-block" src="//www.mallmaverick.com/system/site_images/photos/000/041/782/original/transparent_logo.png?1533845225" :alt="promo.name" />
+                                <img v-else class="center-block" :src="checkImageURL(promo)" :alt="promo.name" />
 							</div>
 							<!--</router-link>-->
 						</div>
