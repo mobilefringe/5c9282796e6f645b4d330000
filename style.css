@@ -3694,6 +3694,9 @@ html .feature_item_container {
 	//       height: 420px;
 	//     }
 	//   }
+	.store_hours_list li span.col-xs-7 {
+	    width: 100%;
+	}
 }
 
 @media (max-width: 992px) {
