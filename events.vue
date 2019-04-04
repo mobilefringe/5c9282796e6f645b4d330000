@@ -225,7 +225,7 @@
                 checkImageURL(value) {
                     if (_.includes(value.image_url, "missing")) {
                         if (value.store === null || value.store === undefined) {
-                            return this.property.default_logo_url;
+                            return ;
                         } else if (
                             value.store != null &&
                             value.store != undefined &&
