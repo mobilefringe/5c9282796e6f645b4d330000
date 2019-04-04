@@ -4291,7 +4291,7 @@ html .feature_item_container {
 }
 
 @media (max-width: 767px) {
-    .green_line .visible_phone {
+    .pink_line .visible_phone {
         display: block;
     }
     .map {
