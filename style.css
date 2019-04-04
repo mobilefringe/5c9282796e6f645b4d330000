@@ -4006,8 +4006,11 @@ html .feature_item_container {
 		img {
 			max-width: 100px;
 		}
-		.footer_property img {
-			height: auto;
+		.footer_property {
+		    margin: 20px 0;
+			img {
+			    height: auto;
+		    }
 		}
 		&>div {
 			padding: 20px;
