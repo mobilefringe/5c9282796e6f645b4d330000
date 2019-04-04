@@ -82,7 +82,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
             return {
                 dataLoaded: false,
                 show_mobile_menu: false,
-                property_logo: "//codecloud.cdn.speedyrails.net/sites/5c9282796e6f645b4d330000/image/png/1554391086802/ShoppersMall-01-White-01.png",
+                property_logo: "//codecloud.cdn.speedyrails.net/sites/5c9282796e6f645b4d330000/image/png/1554391200806/ShoppersMall-01-White-Menu.png",
                 menu_items: MenuItems,
                 search_result : null,
                 suggestionAttribute: 'name',
@@ -96,7 +96,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
         created() {
             this.loadData().then(response => {
                 this.locale = "en-ca";
-                this.property.default_logo_url = "//codecloud.cdn.speedyrails.net/sites/5c9282796e6f645b4d330000/image/png/1554391086802/ShoppersMall-01-White-01.png";
+                this.property.default_logo_url = "//codecloud.cdn.speedyrails.net/sites/5c9282796e6f645b4d330000/image/png/1554391200806/ShoppersMall-01-White-Menu.png";
                 this.dataLoaded = true;
                 
             });
