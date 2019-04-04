@@ -3990,7 +3990,7 @@ html .feature_item_container {
 	//     -webkit-flex-direction: column;
 	//     flex-direction: column;
 	//   }
-	.footer_logos {
+.footer_logos {
 		margin-bottom: 0;
 		padding: 0 20px;
 		max-width: 100%;
@@ -4003,18 +4003,11 @@ html .feature_item_container {
 		&>div {
 			width: 50%;
 		}
-		.site_logo img {
-		    max-width: 160px;
-		}
 		img {
 			max-width: 100px;
 		}
-		.footer_property {
-		    margin: 20px 0;
-			img {
-			    height: auto;
-			    max-width: 80%;
-		    }
+		.footer_property img {
+			height: auto;
 		}
 		&>div {
 			padding: 20px;
