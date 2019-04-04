@@ -86,7 +86,7 @@
                         }
                         else if (this.currentEvent.store == null || this.currentEvent.store == undefined) {
                             this.currentEvent.store = {};
-                            this.currentEvent.store.store_front_url_abs =  "//codecloud.cdn.speedyrails.net/sites/5c9282796e6f645b4d330000/image/png/1554390402001/1116960616920929.2H7zV1gI4pZYWxo6NOtl_height640.png";
+                            this.currentEvent.store.store_front_url_abs =  this.property.default_logo_url;
                         }
                         var vm = this;
                         var temp_event = [];
