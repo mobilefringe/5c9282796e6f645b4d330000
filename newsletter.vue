@@ -11,8 +11,8 @@
             <sponsorship></sponsorship>
             <div class="row"> 
                 <div class="col-md-12 contact_contents">
-                    <!--<form  class="form-horizontal js-cm-form" action="https://mobilefringe.createsend.com/t/d/s/gmdyi/" method="post">-->
-                    <!--id="subForm" action="form-submit" v-on:submit.prevent="validateBeforeSubmit"-->
+                    <form  class="form-horizontal js-cm-form" action=action="https://www.createsend.com/t/subscribeerror?description=" method="post">
+                    id="subForm" action="form-submit" v-on:submit.prevent="validateBeforeSubmit"
                         <div class="form-group ">
                             <div class="col-sm-6 col-xs-12" >
                                 <label class="label" for="cm-name">{{$t("newsletter_page.name")}}</label>
@@ -20,7 +20,7 @@
                             </div>
                             <div class="col-sm-6 col-xs-12">
                                 <label class="label" for="newsletter_email">{{$t("newsletter_page.email")}}</label>
-                                <input v-model="form_data.email" required class="form-control js-cm-email-input" name="cm-gmdyi-gmdyi" type="email" placeholder="Email" id="newsletter_email">
+                                <input v-model="form_data.email" required class="form-control js-cm-email-input" name="cm-wtdltt-wtdltt" type="email" placeholder="Email" id="newsletter_email">
                             </div>
                         </div>
                         <div class="form-group">
@@ -64,6 +64,7 @@
             margin-left: 20px;
     }
 </style>
+<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
 <script>
     define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vee-validate', 'jquery', 'utility', "vue!sponsorship"], function(Vue, Vuex, moment, tz, VueMoment, Meta, VeeValidate, $, Utility, sponsorship) {
         Vue.use(Meta);
