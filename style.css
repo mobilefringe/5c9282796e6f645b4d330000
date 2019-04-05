@@ -1718,7 +1718,7 @@ strong,
 
 #pages_container {
     h1 {
-        font-size: 2rem;
+        font-size: 2rem !important;
     }
 }
 
