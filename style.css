@@ -4377,6 +4377,10 @@ html .feature_item_container {
 	.page_header h1 {
 		font-size: 2.25rem;
 	}
+	/*** sponsor ***/
+	.sponsor-images img {
+	    float: none;
+	}
 }
 
 @media (max-width: 325px) {
