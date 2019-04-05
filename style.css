@@ -1722,6 +1722,7 @@ strong,
     }
     h2 {
         font-size: 1.75rem !important;
+        line-height: 40px;
     }
     a {
         color: #0075c7 !important;
