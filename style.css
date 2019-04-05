@@ -1724,7 +1724,7 @@ strong,
         font-size: 2rem !important;
     }
     a {
-        color: #0075c7;
+        color: #0075c7 !important;
     }
 }
 
