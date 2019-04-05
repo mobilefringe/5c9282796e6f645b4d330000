@@ -1716,11 +1716,11 @@ strong,
 
 // Pages //
 
-// #pages_container {
-//     h1 {
-//         font-size: 2rem !important;
-//     }
-// }
+#page_content_container {
+    h1 {
+        font-size: 2rem !important;
+    }
+}
 
 .inside_page_content h3 {
 	font-size: 1.75rem;
