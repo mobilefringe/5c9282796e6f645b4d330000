@@ -1718,6 +1718,9 @@ strong,
 
 #page_content_container {
     h1 {
+        font-size: 3rem !important;
+    }
+    h2 {
         font-size: 2rem !important;
     }
 }
