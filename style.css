@@ -3057,7 +3057,6 @@ button[disabled].contest_btn:hover {
 	.contact_us_body {
 		h4,
 		p {
-			padding-left: 10px;
 			word-break: break-word;
 		}
 	}
