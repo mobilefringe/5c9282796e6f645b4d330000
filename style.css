@@ -1714,6 +1714,14 @@ strong,
 	color: $link;
 }
 
+// Pages //
+
+#pages_container {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
 .inside_page_content h3 {
 	font-size: 1.75rem;
 }
