@@ -1723,6 +1723,9 @@ strong,
     h2 {
         font-size: 2rem !important;
     }
+    a {
+        color: #0075c7;
+    }
 }
 
 .inside_page_content h3 {
