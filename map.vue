@@ -1,6 +1,6 @@
 <template>
 	<div v-if="dataloaded">
-	    <div v-if="pageBanner" class="page_header" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
+	    <div class="page_header" v-if="pageBanner" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
 			<!--http://via.placeholder.com/1920x300-->
 			<div class="site_container">
 				<div class="header_content">
@@ -51,20 +51,21 @@
                     windowWidth: 0,
                     storeBanner : null,
                     search_result : null,
-                    pageBanner: null
                 }
             },
             created (){
-               this.loadData().then(response => {
-                    // this.currentPage = response[0].data;
+                this.loadData().then(response => {
+                    this.dataloaded = true;
+                    this.filteredStores = this.allStores;
+
                     var temp_repo = this.findRepoByName('Map Banner');
                     if(temp_repo && temp_repo.images) {
                         this.pageBanner = temp_repo.images[0];
-                    } else {
-                        this.pageBanner= {};
+                    }
+                    else {
+                        this.pageBanner = {};
                         this.pageBanner.image_url = "";
                     }
-                    console.log(this.pageBanner)
                 });
             },
             watch: {
