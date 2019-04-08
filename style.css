@@ -4034,6 +4034,9 @@ html .feature_item_container {
 		.site_logo img {
 		    max-width: 150px;
 		}
+		.footer_property img {
+		    max-width: 75px;
+		}
 	}
 	//   .home-banner-container {
 	//     // height: 240px;
