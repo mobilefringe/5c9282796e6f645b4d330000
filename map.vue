@@ -51,6 +51,7 @@
                     windowWidth: 0,
                     storeBanner : null,
                     search_result : null,
+                    pageBanner: null
                 }
             },
             created (){
