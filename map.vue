@@ -58,7 +58,6 @@
                this.loadData().then(response => {
                     // this.currentPage = response[0].data;
                     var temp_repo = this.findRepoByName('Map Banner');
-                    console.log(temp_repo)
                     if(temp_repo && temp_repo.images) {
                         this.pageBanner = temp_repo.images[0];
                     } else {
