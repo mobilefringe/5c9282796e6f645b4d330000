@@ -156,7 +156,7 @@
                     incrementBy: 5,
                     showMore: 5,
                     promos: null,
-                    defaultlogo
+                    defaultlogo: "//codecloud.cdn.speedyrails.net/sites/5c9282796e6f645b4d330000/image/png/1554390402001/1116960616920929.2H7zV1gI4pZYWxo6NOtl_height640.png"
                 }
             },
             created() {
@@ -226,7 +226,7 @@
                 checkImageURL(value) {
                     if (_.includes(value.image_url, "missing")) {
                         if (value.store === null || value.store === undefined) {
-                            return this.property.default_logo_url;
+                            return this.defaultlogo;
                         } else if (
                             value.store != null &&
                             value.store != undefined &&
