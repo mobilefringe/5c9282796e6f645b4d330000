@@ -66,6 +66,7 @@
                         this.pageBanner = {};
                         this.pageBanner.image_url = "";
                     }
+                    console.log(this.pageBanner)
                 });
             },
             watch: {
