@@ -224,6 +224,7 @@
                 },
                 checkImageURL(value) {
                     if (_.includes(value.image_url, "missing")) {
+                        console.log(value.store)
                         if (value.store === null || value.store === undefined) {
                             return this.property.default_logo_url_black;
                         } else if (
