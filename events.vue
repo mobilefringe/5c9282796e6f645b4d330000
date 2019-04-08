@@ -156,7 +156,7 @@
                     incrementBy: 5,
                     showMore: 5,
                     promos: null,
-                    defaultlogo: null
+                    defaultlogo: "//codecloud.cdn.speedyrails.net/sites/5c9282796e6f645b4d330000/image/png/1554390402001/1116960616920929.2H7zV1gI4pZYWxo6NOtl_height640.png"
                 }
             },
             created() {
