@@ -4027,6 +4027,7 @@ html .feature_item_container {
 		.footer_property img {
 			height: auto;
 			max-width: 80%;
+			margin: 10px auto;
 		}
 		&>div {
 			padding: 20px;
