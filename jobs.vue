@@ -26,7 +26,7 @@
                                         <h2 class="store_details_name">{{ promo.store.name }}</h2>
                                     </div>    
                                 </div>
-                                <img v-else class="store_details_image center-block" src="//codecloud.cdn.speedyrails.net/sites/5c9282796e6f645b4d330000/image/png/1554390402001/1116960616920929.2H7zV1gI4pZYWxo6NOtl_height640.png" :alt="promo.store.name + ' Logo'" />
+                                <img v-else class="store_details_image center-block" :src="promo.store.store_front_url_abs" :alt="promo.store.name + ' Logo'" />
                                 </div>
     						</div>
 						<div class="col-sm-6 col-md-8 event_dets_container">
