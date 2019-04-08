@@ -81,7 +81,8 @@
                     correctValNum: null,
                     validNumError: false,
                     currentPage : null,
-                    pageBanner: null
+                    pageBanner: null,
+                    plainBanner: null
                 }
             },
             created(){
