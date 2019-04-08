@@ -155,7 +155,8 @@
                     // paginate: ['events'],
                     incrementBy: 5,
                     showMore: 5,
-                    promos: null
+                    promos: null,
+                    defaultlogo
                 }
             },
             created() {
