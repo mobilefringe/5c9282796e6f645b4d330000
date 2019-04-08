@@ -63,10 +63,6 @@
                     if(temp_repo && temp_repo.images) {
                         this.pageBanner = temp_repo.images[0];
                     }
-                    else {
-                        this.pageBanner = {};
-                        this.pageBanner.image_url = "";
-                    }
                     console.log(this.pageBanner)
                 });
             },
