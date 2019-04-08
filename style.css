@@ -4024,7 +4024,9 @@ html .feature_item_container {
 		img {
 			max-width: 100px;
 		}
-		.footer_property img {
+		.footer_property {
+		    margin: 10px auto;
+		    img {
 			height: auto;
 			max-width: 80%;
 			margin: 10px auto;
