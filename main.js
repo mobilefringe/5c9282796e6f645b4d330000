@@ -39,7 +39,7 @@ require.config({
         'vue-paginate': 'https://cdnjs.cloudflare.com/ajax/libs/vue-paginate/3.5.1/vue-paginate',
         'loader': 'https://mmvue.codecloudapp.com/loader.vue?noext',
         'campaignMonitor': 'https://js.createsend1.com/javascript/copypastesubscribeformlogic',
-        'bootstrap-vue' : 'https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue',
+        // 'bootstrap-vue' : 'https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue',
         'store-masonry': 'https://mmvue.codecloudapp.com/storelist_masonry.vue?noext',
         //png-map dependencies
         'mousewheel' : 'https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min',
@@ -98,7 +98,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
             this.loadData().then(response => {
                 this.locale = "en-ca";
                 this.property.default_logo_url = "//codecloud.cdn.speedyrails.net/sites/5c9282796e6f645b4d330000/image/png/1554391200806/ShoppersMall-01-White-Menu.png";
-                this.property.default_logo_url_black = "//codecloud.cdn.speedyrails.net/sites/5c9282796e6f645b4d330000/image/png/1554390402001/1116960616920929.2H7zV1gI4pZYWxo6NOtl_height640.png"
+                this.property.default_logo_url_black = "//codecloud.cdn.speedyrails.net/sites/5c9282796e6f645b4d330000/image/png/1554390402001/1116960616920929.2H7zV1gI4pZYWxo6NOtl_height640.png";
                 this.dataLoaded = true;
                 
             });
