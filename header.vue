@@ -17,7 +17,7 @@
         					<div id="search_component_wrapper" class="inline_block" v-if="showSearch">
         					    <div class="search_component_container" >
                                     <search-component :list="searchList" placeholder="Search" :suggestion-attribute="suggestionAttribute" :keys="keys" v-model="search_result" @select="onOptionSelect" :autocomplete="false" :minMatchCharLength="3" :tokenize="true" class="text-left">
-                                        <label for="search_box" style="display:none"></label>
+                                        <label for="search_box"></label>
                                         <template slot="item" scope="option" class="manual">
                                             <article class="media">
                                             <p>
