@@ -225,19 +225,20 @@
                 checkImageURL(value) {
                     if (_.includes(value.image_url, "missing")) {
                         if (value.store === null || value.store === undefined) {
-                            return this.property.default_logo_url_black;
+                            return this.property.default_logo_url;
                         } else if (
                             value.store != null &&
                             value.store != undefined &&
                             _.includes(value.store.store_front_url_abs, "missing")
                         ) {
-                            return this.property.default_logo_url_black;
+                            return null;
                         } else {
                             return value.store.store_front_url_abs;
                         }
                     } else {
                         return value.event_image_url_abs;
                     }
+                    console.log(value)
                 }
             }
         });
