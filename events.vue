@@ -238,7 +238,7 @@
                     } else {
                         return value.event_image_url_abs;
                     }
-                    console.log(value)
+                    console.log(checkImagesURL(value))
                 }
             }
         });
