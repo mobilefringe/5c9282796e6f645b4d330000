@@ -231,7 +231,7 @@
                             value.store != undefined &&
                             _.includes(value.store.store_front_url_abs, "missing")
                         ) {
-                            return null;
+                            return this.property.default_logo_url_black;
                         } else {
                             return value.store.store_front_url_abs;
                         }
