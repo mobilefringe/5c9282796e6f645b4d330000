@@ -20,7 +20,8 @@
 					<h3 class="promo_name" style="margin: 20px auto 0px;"  v-else>{{currentPromo.name_2}}</h3>
 					<div class="row">
 						<p class="promo_div_date pull-left">{{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</p>
-						<social-sharing :url="$root.shareURL('promos',currentPromo.slug)" :title="currentPromo.title" :description="currentPromo.body" :quote="_.truncate(currentPromo.description, {'length': 99})" :twitter-user="$root.twitter_user" :media="currentPromo.image_url" inline-template >
+					</div>
+					<social-sharing :url="$root.shareURL('promos',currentPromo.slug)" :title="currentPromo.title" :description="currentPromo.body" :quote="_.truncate(currentPromo.description, {'length': 99})" :twitter-user="$root.twitter_user" :media="currentPromo.image_url" inline-template >
 							<div class="blog-social-share" style="margin: 15px auto;">
 								<div class="social_share">
 									<network network="facebook">
@@ -32,7 +33,6 @@
 								</div>
 							</div>
 						</social-sharing>
-					</div>
 					<div class="col-sm-12 no_padding text-left">
 						<img v-if="!_.includes(currentPromo.image_url, 'missing')" v-lazy="currentPromo.image_url" class="image" :alt="currentPromo.name"/>
 						<div class="text-left promo_description">
