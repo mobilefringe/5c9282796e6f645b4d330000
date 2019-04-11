@@ -183,6 +183,7 @@
 
                     })
                     this.promotions = temp_promo;
+                    console.log(this.jobs)
                     this.jobs = temp_job;
                     
                     var storeHours = [];
