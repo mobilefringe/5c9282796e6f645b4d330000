@@ -154,7 +154,7 @@
                     incrementBy: 5,
                     showMore: 5,
                     promos: null,
-                    start_date
+                    start_date: null
                 }
             },
             created() {
