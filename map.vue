@@ -93,6 +93,13 @@
                 ]),
                 allStores() {
                     var all_stores = this.processedStores;
+                    var initZoom = {};
+                    initZoom.svgmap_region = "init";
+                    initZoom.z_coordinate = 1;
+                    initZoom.x = 0.5;
+                    initZoom.y = 0.5;
+                    initZoom.zoom = 1;
+                    all_stores.push(initZoom)
                     _.forEach(all_stores, function(value, key) {
                         value.zoom = 2;
                     });
