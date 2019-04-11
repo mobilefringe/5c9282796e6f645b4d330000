@@ -101,12 +101,12 @@
 									<!--<img v-lazy="checkImageURL(promo)" class="image" alt=""/>-->
 								</div>
 								<div class="store_promo_dets_container padding_tb_20">
-								    <p class="promo_div_name" v-if="locale=='fr-ca'">{{promo.name_2}}</p>
-								    <p class="promo_div_name" v-else>{{promo.name}}</p>
-    								<p class="promo_div_date"><i class="fa fa-calendar"></i>{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
+								    <p class="promo_div_name" v-if="locale=='fr-ca'">{{job.name_2}}</p>
+								    <p class="promo_div_name" v-else>{{job.name}}</p>
+    								<p class="promo_div_date"><i class="fa fa-calendar"></i>{{job.start_date | moment("MMM D", timezone)}} - {{job.end_date | moment("MMM D", timezone)}}</p>
     								<div>
     								    <button class="store_dets_btn">
-        									<router-link :to="'/promotions/'+promo.slug" class="" >{{$t("promos_page.read_more")}}</router-link>
+        									<router-link :to="'/promotions/'+job.slug" class="" >{{$t("job_page.read_more")}}</router-link>
         								</button>
     								</div>
     								
