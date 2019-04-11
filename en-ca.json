@@ -56,6 +56,7 @@
   "stores_page" : {
     "shopping" : "shopping",
     "restaurants" : "Restaurants",
+    "dining" : "Dining",
     "map" : "Map",
     "find_your_store": "Find Your Store",
     "sort_by_cats" : "Sort By Categories",
