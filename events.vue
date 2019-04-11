@@ -169,6 +169,7 @@
                         this.pageBanner.image_url = "";
                     }
                     this.promos = this.events;
+                    console.log(this.promos)
                 });
             },
             computed: {
