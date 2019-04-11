@@ -28,7 +28,7 @@
             </div>
             <div class="col-sm-8">
                 <div class="map light_border">
-    				<mapplic-map ref="mapplic_ref" :height="650" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="mapStores" :floorlist="floorList" tooltiplabel="View Store Details"></mapplic-map>
+    				<mapplic-map ref="mapplic_ref" :height="650" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "6" :storelist="mapStores" :floorlist="floorList" tooltiplabel="View Store Details"></mapplic-map>
     			</div>
             </div>
 		</div>
