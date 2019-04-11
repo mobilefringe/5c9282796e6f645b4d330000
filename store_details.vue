@@ -11,7 +11,7 @@
 		<div class="site_container">
 		    <sponsorship></sponsorship>
 			<div class="row">
-			    <router-link to="/events">
+			    <router-link to="/storesx">
 				    <i class="fa fa-angle-left"></i> 
 				    {{$t("stores_page.back_to_stores")}}
 				</router-link>
