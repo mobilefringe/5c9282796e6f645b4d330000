@@ -181,13 +181,13 @@ define([], function() {
             }]
         },
         {
-            path: '/restaurants',
+            path: '/dine',
             component: view('default'),
             redirect: '/',
             children: [{
                 path: '',
                 component: view('restaurants'),
-                name: 'dine'
+                name: 'restaurants'
             }]
         },
         {
