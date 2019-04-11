@@ -16,8 +16,8 @@
                         <h3 class="hours_heading text-left" >{{$t("hours_page.reg_hours")}}</h3>
                         <div id="hours_container" class="hours_container">
                             <div class="hours_div" v-for="hour in hours">
-                                <div class="text-left">
-                                    <p class="col-sm-6 hours_days">{{hour.day_of_week | moment("dddd", timezone)}}: </p>
+                                <div class="col-sm-6 text-left">
+                                    <p class="hours_days">{{hour.day_of_week | moment("dddd", timezone)}}: </p>
                                 </div>
                                 <div class="text-right">
                                     <p class="col-sm-6 hours_days">{{hour.open_time | moment("h:mm A", timezone)}} - {{hour.close_time | moment("h:mm A", timezone)}}</p>
