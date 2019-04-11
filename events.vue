@@ -203,7 +203,7 @@
                         }
                     });
                     temp_promo = _.sortBy(temp_promo, ['created_at', 'start_date']).reverse();
-                    start_date = temp_promo 
+                    start_date = temp_promo | moment("MMM D", timezone)}}
                     return temp_promo;
                 },
             },
