@@ -14,7 +14,7 @@
 				<div class="col-sm-12 promo_image_container text-left">
 					<router-link to="/promotions">
 					    <i class="fa fa-angle-left"></i> 
-					    {{$t("promos_page.back_to_events")}}
+					    {{$t("promos_page.back_to_promos")}}
 					</router-link>
 					<h3 class="promo_name" style="margin: 20px auto 0px;"  v-if="locale=='en-ca'">{{currentPromo.name}}</h3>
 					<h3 class="promo_name" style="margin: 20px auto 0px;"  v-else>{{currentPromo.name_2}}</h3>
