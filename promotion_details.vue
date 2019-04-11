@@ -12,7 +12,7 @@
 		    <sponsorship></sponsorship>
 			<div class="row">
 				<div class="col-sm-12 promo_image_container text-left">
-					<router-link to="/events">
+					<router-link to="/promotions">
 					    <i class="fa fa-angle-left"></i> 
 					    {{$t("events_page.back_to_events")}}
 					</router-link>
