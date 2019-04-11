@@ -34,7 +34,7 @@
 							<h4 class="event_name caps" v-else>{{promo.name_2}}</h4>
 							<div class="event_thick_line"></div>
 							<p class="event_dates" v-if="promo.start_date == promo.end_date">{{promo.start_date | moment("MMM D", timezone)}}</p>
-							<p class="event_dates" v-else>{{ promo.start_date }}</p>
+							<p class="event_dates" v-else>{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
 							<p class="event_desc" v-if="locale=='en-ca'">{{promo.description_short}}</p>
 							<p class="event_desc" v-else>{{promo.description_short_2}}</p>
 						
@@ -153,7 +153,8 @@
                     // paginate: ['events'],
                     incrementBy: 5,
                     showMore: 5,
-                    promos: null
+                    promos: null,
+                    start_date
                 }
             },
             created() {
@@ -202,6 +203,7 @@
                         }
                     });
                     temp_promo = _.sortBy(temp_promo, ['created_at', 'start_date']).reverse();
+                    start_date = temp_promo 
                     return temp_promo;
                 },
             },
