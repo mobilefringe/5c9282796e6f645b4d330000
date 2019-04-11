@@ -102,7 +102,7 @@
                     // initZoom.x = 0.5;
                     // initZoom.y = 0.5;
                     // initZoom.zoom = 0.5;
-                    all_stores.push(initZoom)
+                    // all_stores.push(initZoom)
                     return all_stores;
                 },
                 mapStores() {
