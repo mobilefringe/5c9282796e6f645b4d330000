@@ -42,11 +42,11 @@
         "sub_menu": [
             {
                 "name": "header.guest_services",
-                "href": "/pages/shoppersworld-guest-services"
+                "href": "/pages/shoppersmall-guest-services"
             },
             {
                 "name": "header.gift_cards",
-                "href": "/pages/shoppersworld-gift-cards"
+                "href": "/pages/shoppersmall-gift-cards"
             }
         ]
     },
@@ -58,19 +58,19 @@
         "sub_menu": [
             {
                 "name": "header.history",
-                "href": "/pages/shoppersworld-history"
+                "href": "/pages/shoppersmall-history"
             },
             {
                 "name": "header.green_link",
-                "href": "/pages/shoppersworld-green-link"
+                "href": "/pages/shoppersmall-green-link"
             },
             {
                 "name": "header.awards",
-                "href": "/pages/shoppersworld-awards"
+                "href": "/pages/shoppersmall-awards"
             },
             {
                 "name": "header.press_releases",
-                "href": "/pages/shoppersworld-press-releases"
+                "href": "/pages/shoppersmall-press-releases"
             }
         ]
     },
