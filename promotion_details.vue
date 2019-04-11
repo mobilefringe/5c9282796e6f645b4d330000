@@ -16,7 +16,7 @@
 					    <i class="fa fa-angle-left"></i> 
 					    {{$t("events_page.back_to_events")}}
 					</router-link>
-					<h3 class="promo_name" style="margin: 20px auto 0px;"  v-if="locale=='en-ca'">{{currentEvent.name}}</h3>
+					<h3 class="promo_name" style="margin: 20px auto 0px;"  v-if="locale=='en-ca'">{{currentPromo.name}}</h3>
 					<h3 class="promo_name" style="margin: 20px auto 0px;"  v-else>{{currentEvent.name_2}}</h3>
 					<div class="row">
 						<p class="promo_div_date pull-left">{{currentEvent.start_date | moment("MMM D", timezone)}} - {{currentEvent.end_date | moment("MMM D", timezone)}}</p>
