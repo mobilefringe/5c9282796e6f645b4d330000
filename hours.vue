@@ -41,7 +41,7 @@
                                 <span>
                                     <span v-if="locale=='en-ca'">{{hour.holiday_name}} -</span>
                                     <span v-else>{{hour.holiday_name_2}}</span>
-                                    ({{hour.holiday_date | moment("MMM D YYYY", timezone)}})
+                                    {{hour.holiday_date | moment("MMM D YYYY", timezone)}}
                                 </span>
                             </div>
                         </div>
