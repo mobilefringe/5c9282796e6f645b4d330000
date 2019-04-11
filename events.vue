@@ -203,6 +203,7 @@
                         }
                     });
                     temp_promo = _.sortBy(temp_promo, ['created_at', 'start_date']).reverse();
+                    console.log(temp_promo)
                     return temp_promo;
                 },
             },
