@@ -20,9 +20,8 @@
                                     <p class="col-sm-6">{{hour.day_of_week | moment("dddd", timezone)}}: </p>
                                 </div>
                                 <div class="text-right">
-                                    
+                                    <p class="col-sm-6">{{hour.open_time | moment("h:mm A", timezone)}} - {{hour.close_time | moment("h:mm A", timezone)}}</p>
                                 </div>
-                                <p class="col-sm-6">{{hour.open_time | moment("h:mm A", timezone)}} - {{hour.close_time | moment("h:mm A", timezone)}}</p>
                             </div>
                         </div>
                     </div>
