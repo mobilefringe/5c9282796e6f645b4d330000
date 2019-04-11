@@ -106,7 +106,7 @@
     								<p class="promo_div_date"><i class="fa fa-calendar"></i>{{job.start_date | moment("MMM D", timezone)}} - {{job.end_date | moment("MMM D", timezone)}}</p>
     								<div>
     								    <button class="store_dets_btn">
-        									<router-link :to="'/promotions/'+job.slug" class="" >{{$t("job_page.read_more")}}</router-link>
+        									<router-link :to="'/jobs/'+job.slug" class="" >{{$t("job_page.read_more")}}</router-link>
         								</button>
     								</div>
     								
