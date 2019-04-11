@@ -820,7 +820,7 @@ a.mapplic-zoomout-button {
 .mapplic-popup-link {
 	background-color: #6CB5F4;
 	border-radius: 0;
-	color: #fff !important;
+	color: #000 !important;
 	float: right;
 	font-size: 14px;
 	line-height: 28px;
