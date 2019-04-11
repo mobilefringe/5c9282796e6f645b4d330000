@@ -22,17 +22,17 @@
 						<p class="promo_div_date pull-left">{{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</p>
 					</div>
 					<social-sharing :url="$root.shareURL('promos',currentPromo.slug)" :title="currentPromo.title" :description="currentPromo.body" :quote="_.truncate(currentPromo.description, {'length': 99})" :twitter-user="$root.twitter_user" :media="currentPromo.image_url" inline-template >
-							<div class="blog-social-share" style="margin: 15px auto;">
-								<div class="social_share">
-									<network network="facebook">
-										<i class="fa fa-facebook social_icons" aria-hidden="true"></i>
-									</network>
-									<network network="twitter">
-										<i class="fa fa-twitter social_icons" aria-hidden="true"></i>
-									</network>
-								</div>
+						<div class="blog-social-share" style="margin: 15px auto;">
+							<div class="social_share">
+								<network network="facebook">
+									<i class="fa fa-facebook social_icons" aria-hidden="true"></i>
+								</network>
+								<network network="twitter">
+									<i class="fa fa-twitter social_icons" aria-hidden="true"></i>
+								</network>
 							</div>
-						</social-sharing>
+						</div>
+					</social-sharing>
 					<div class="col-sm-12 no_padding text-left">
 						<img v-if="!_.includes(currentPromo.image_url, 'missing')" v-lazy="currentPromo.image_url" class="image" :alt="currentPromo.name"/>
 						<div class="text-left promo_description">
