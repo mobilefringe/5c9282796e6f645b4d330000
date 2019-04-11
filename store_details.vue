@@ -86,6 +86,9 @@
 						</div>
 					</div>
 				</div>
+				<div class="col-sm-8 text-left">
+				    
+				</div>
 			</div>
 		</div>
 	</div>
