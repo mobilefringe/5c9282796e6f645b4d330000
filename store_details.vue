@@ -70,9 +70,9 @@
 								    <p class="promo_div_name" v-else>{{promo.name}}</p>
     								<p class="promo_div_date"><i class="fa fa-calendar"></i>{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
     								<div>
-    								    <span class="store_dets_btn">
+    								    <button class="contact_btn">
         									<router-link :to="'/promotions/'+promo.slug" class="" >{{$t("promos_page.read_more")}}</router-link>
-        								</span>
+        								</button>
     								</div>
     								
 								</div>
