@@ -87,11 +87,6 @@
 					</div>
 				</div>
 				<div class="col-sm-8 text-left">
-				    <h4 v-if="currentStore.rich_description" class="store_dets_title caps"> {{$t("stores_page.about_us")}}</h4>
-					<div class="text-left promo_description">
-						<p v-if="locale=='en-ca'" v-html="currentStore.rich_description"></p>
-						<p v-else v-html="currentStore.rich_description_2"></p>
-					</div>
 					<div class="store_promo_container" v-if="promotions.length > 0">
 						<div class="promo_container_title text-left caps"></div>
 						<h4 class="store_dets_title caps margin_30">{{$t("promos_page.promotions")}}</h4>
