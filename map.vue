@@ -96,13 +96,13 @@
                     _.forEach(all_stores, function(value, key) {
                         value.zoom = 2;
                     });
-                    // var initZoom = {};
-                    // initZoom.svgmap_region = "init";
-                    // initZoom.z_coordinate = 1;
-                    // initZoom.x = 0.5;
-                    // initZoom.y = 0.5;
-                    // initZoom.zoom = 0.5;
-                    // all_stores.push(initZoom)
+                    var initZoom = {};
+                    initZoom.svgmap_region = "init";
+                    initZoom.z_coordinate = 1;
+                    initZoom.x = 0.5;
+                    initZoom.y = 0.5;
+                    initZoom.zoom = 0.5;
+                    all_stores.push(initZoom)
                     return all_stores;
                 },
                 mapStores() {
