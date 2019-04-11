@@ -37,7 +37,7 @@
 						<img v-if="!_.includes(currentPromo.image_url, 'missing')" v-lazy="currentPromo.image_url" class="image" :alt="currentPromo.name"/>
 						<div class="text-left promo_description">
 							<p v-if="locale=='en-ca'" v-html="currentPromo.rich_description"></p>
-							<p v-else v-html="currentEvent.rich_description_2"></p>
+							<p v-else v-html="currentPromo.rich_description_2"></p>
 						</div>
 					</div>
 				</div>
