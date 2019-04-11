@@ -13,7 +13,7 @@
 			<div class="row">
 			    <router-link to="/events">
 				    <i class="fa fa-angle-left"></i> 
-				    {{$t("events_page.back_to_stores")}}
+				    {{$t("stores_page.back_to_stores")}}
 				</router-link>
 				<div class="col-sm-4 promo_logo_container hidden_phone">
 					<div class="image_container details_store_image">
