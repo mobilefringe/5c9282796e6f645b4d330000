@@ -11,6 +11,10 @@
 		<div class="site_container">
 		    <sponsorship></sponsorship>
 			<div class="row">
+			    <router-link to="/events">
+				    <i class="fa fa-angle-left"></i> 
+				    {{$t("events_page.back_to_events")}}
+				</router-link>
 				<div class="col-sm-4 promo_logo_container hidden_phone">
 					<div class="image_container details_store_image">
 						<!--<img v-lazy="currentStore.store_front_url_abs" class="image"/>-->
