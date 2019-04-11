@@ -1,5 +1,5 @@
 <template>
-	<div class="event_dets_container" v-if="currentEvent">
+	<div class="event_dets_container" v-if="currentPromo">
 		<div class="page_header" v-if="pageBanner" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
 			<div class="site_container">
 				<div class="header_content caps">
