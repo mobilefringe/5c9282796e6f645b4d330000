@@ -73,7 +73,7 @@
               <div
                 class="pointer"
                 @click="loadMoreItems()"
-              >{{$t("promos_page.more_promos")}}</div>
+              >{{$t("jobs_page.more_jobss")}}</div>
             </div>
 		</div>
 	</div>
