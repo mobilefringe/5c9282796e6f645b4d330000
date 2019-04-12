@@ -132,7 +132,6 @@
                 },
                 checkResultImage(result){
                     if(result.store_front_url_abs){
-                        console.log(result.store_front_url_abs)
                         // this is a store with no image
                         if(_.includes(result.store_front_url_abs,'missing')){
                             return true
