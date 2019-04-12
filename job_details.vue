@@ -10,8 +10,8 @@
 			</div>
 		</div>
 		<div class="site_container">
+			<router-link to="/jobs"><i class="fa fa-angle-left"></i> {{$t("jobs_page.back_to_jobs")}}</router-link>
 			<div class="row">
-				<router-link to="/jobs"><i class="fa fa-angle-left"></i> {{$t("jobs_page.back_to_jobs")}}</router-link>
 				<div class="col-sm-4 promo_logo_container hidden_phone">
 					<div class="image_container details_store_image">
 						<!--<img v-lazy="currentStore.store_front_url_abs" class="image"/>-->
