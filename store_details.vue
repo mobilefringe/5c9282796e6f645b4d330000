@@ -279,7 +279,7 @@
                       return value.store.store_front_url_abs;
                     }
                   } else {
-                    return value.promo_image_url_abs;
+                    return value.store_image_url;
                   }
                 }
             }
