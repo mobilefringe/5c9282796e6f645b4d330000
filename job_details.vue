@@ -40,8 +40,8 @@
 						</div>
 					</div>
 				</div>
+				<router-link to="/jobs"><i class="fa fa-angle-left"></i> {{$t("jobs_page.back_to_jobs")}}</router-link>
 				<div class="col-sm-8 promo_image_container text-left">
-					<router-link to="/jobs"><i class="fa fa-angle-left"></i> {{$t("jobs_page.back_to_jobs")}}</router-link>
 					<h3 class="promo_name" style="margin: 20px auto 0px;" v-if="locale=='en-ca'">{{currentJob.name}}</h3>
 					<h3 class="promo_name" style="margin: 20px auto 0px;" v-else>{{currentJob.name_2}}</h3>
 					<div class="row">
