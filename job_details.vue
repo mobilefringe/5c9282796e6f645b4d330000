@@ -52,7 +52,7 @@
 						<p class="promo_div_date pull-left">{{currentJob.start_date | moment("MMM D", timezone)}} - {{currentJob.end_date | moment("MMM D", timezone)}}</p>
 					</div>
 					<social-sharing :url="$root.shareURL('jobs',currentJob.slug)" :title="currentJob.title" :description="currentJob.body" :quote="_.truncate(currentJob.description, {'length': 99})" :twitter-user="$root.twitter_user" :media="currentJob.image_url" inline-template >
-						<div class="blog-social-share" style="margin: 0 auto 15px;">
+						<div class="blog-social-share" style="margin: 0">
 							<div class="social_share">
 								<network network="facebook">
 									<i class="fa fa-facebook social_icons" aria-hidden="true"></i>
