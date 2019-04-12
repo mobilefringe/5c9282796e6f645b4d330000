@@ -11,7 +11,7 @@
 		<div class="site_container">
 		    <sponsorship></sponsorship>
 			<div class="row">
-			    <div class="col-sm-12">
+			    <div class="col-sm-12 store_router">
     			    <router-link to="/stores">
     				    <i class="fa fa-angle-left"></i> 
     				    {{$t("stores_page.back_to_stores")}}
