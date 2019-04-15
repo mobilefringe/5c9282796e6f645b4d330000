@@ -74,7 +74,9 @@
 								<div class="store_promo_dets_container padding_tb_20">
 								    <p class="promo_div_name" v-if="locale=='fr-ca'">{{promo.name_2}}</p>
 								    <p class="promo_div_name" v-else>{{promo.name}}</p>
-    								<p class="promo_div_date"><i class="fa fa-calendar"></i>{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
+    								<p class="promo_div_date" v-if="isMultiDay(promo)"><i class="fa fa-calendar"></i>{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
+    								<p class="event_dates" v-if="isMultiDay(promo)">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}} </p>
+							<p class="event_dates" v-else>{{ promo.start_date | moment("MMM D", timezone) }}</p>
     								<div>
     								    <button class="contest_btn">
         									<router-link :to="'/promotions/'+promo.slug" class="" >{{$t("promos_page.read_more")}}</router-link>
