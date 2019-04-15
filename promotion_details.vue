@@ -36,6 +36,7 @@
 					</social-sharing>
 					<div class="col-sm-12 no_padding text-left">
 						<img v-if="!_.includes(currentPromo.image_url, 'missing')" v-lazy="currentPromo.image_url" class="image" :alt="currentPromo.name"/>
+						<img v-else class="image" :src="checkImageURL(promo)" :alt="promo.name" />
 						<div class="text-left promo_description">
 							<p v-if="locale=='en-ca'" v-html="currentPromo.rich_description"></p>
 							<p v-else v-html="currentPromo.rich_description_2"></p>
