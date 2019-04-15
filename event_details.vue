@@ -8,7 +8,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="site_container">
+		<div class="site_container col-sm-12">
 		    <sponsorship></sponsorship>
 			<div class="row">
 				<div class="col-sm-12 promo_image_container margin_40 text-left">
