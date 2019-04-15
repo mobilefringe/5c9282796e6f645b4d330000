@@ -32,7 +32,7 @@
                             </div>
                             <div v-else class="col-sm-3 store_details_image center-block">
                                 <img v-if="result.store != null" class="result_logo nana" :src="result.store.image_url"/>   
-                                <img v-else :src="result.image_url" />
+                                <img v-else class="nana" :src="result.image_url" />
                             </div>
                             <div class="col-sm-9 search_result_content">
                                 <h3>{{result.name}}</h3>
