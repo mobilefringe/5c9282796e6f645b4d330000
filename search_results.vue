@@ -17,9 +17,9 @@
                         <div class="row result_container_row">
                             <div v-if="result.is_store" class="col-sm-3 store_details_image center-block">
                                 <div v-if="result.hasOwnProperty('promo_image_url_abs')">
-                                    <img :src="result.promo_image_url_abs"
+                                    <img :src="result.promo_image_url_abs" />
                                 </div>
-                                <div v-if="checkResultImage(result)">
+                                <div v-else-if="checkResultImage(result)">
                                     <div class="no_logo">
                                         <img src="//codecloud.cdn.speedyrails.net/sites/5b88438d6e6f641e8d3c0000/image/png/1536092029690/transparent_logo.png">
                                         <p class="store_details_name">
