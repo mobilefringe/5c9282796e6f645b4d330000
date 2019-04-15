@@ -127,6 +127,7 @@
                         this.storeHours = _.sortBy(storeHours, [function(o) { return o.order; }]);
                     }
                 }
+                console.log(this.currentPromo)
             },
             computed: {
                 ...Vuex.mapGetters([
