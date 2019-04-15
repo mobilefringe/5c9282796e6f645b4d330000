@@ -143,7 +143,7 @@
                             //     value.store.store_front_url_abs =  vm.property.default_logo_url;
                             // }
                             if (value.store  && _.includes(value.store.store_front_url_abs, 'missing')) {
-                                value.store.store_front_url_abs = value.default_logo_url_black;
+                                value.store.store_front_url_abs = this.property.default_logo_url_black;
                                 value.store.no_store_logo = true;
                             }
                             else if (!value.store) {
