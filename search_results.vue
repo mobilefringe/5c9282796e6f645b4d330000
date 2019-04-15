@@ -87,7 +87,6 @@
                 ) {
                     this.$router.push("/");
                 }
-                console.log(this.searchResults)
             },
             computed: {
                 ...Vuex.mapGetters([
