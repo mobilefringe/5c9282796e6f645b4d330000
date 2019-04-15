@@ -95,7 +95,7 @@
 								    <p class="promo_div_name" v-else>{{job.name}}</p>
     								<p class="promo_div_date"><i class="fa fa-calendar"></i>{{job.start_date | moment("MMM D", timezone)}} - {{job.end_date | moment("MMM D", timezone)}}</p>
     								<div>
-    								    <button class="contest_btn" style="max-width: 300px">
+    								    <button class="contest_btn">
         									<router-link :to="'/jobs/'+job.slug" class="" >{{$t("jobs_page.read_more")}}</router-link>
         								</button>
     								</div>
