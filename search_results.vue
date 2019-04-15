@@ -31,7 +31,7 @@
                                 </div>
                             </div>
                             <div v-else class="col-sm-3 store_details_image center-block">
-                                <img class="result_logo" :src="result.image_url || result.store.image_url"/>   
+                                <img class="result_logo" :src="result.image_url"/>   
                             </div>
                             <div class="col-sm-9 search_result_content">
                                 <h3>{{result.name}}</h3>
