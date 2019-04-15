@@ -20,10 +20,10 @@
 					<h3 class="promo_name" style="margin: 20px auto 0px;"  v-else>{{currentEvent.name_2}}</h3>
 					<div class="row">
 						<p class="promo_div_date pull-left" v-if="isMultiDay(currentEvent)"><i class="fa fa-calendar"></i>{{currentEvent.start_date | moment("MMM D", timezone)}} - {{currentEvent.end_date | moment("MMM D", timezone)}}</p>
-						<p class="promo_div_date pull-left" v-else>{{currentEvent.start_date | moment("MMM D", timezone)}}</p>
+						<p class="promo_div_date pull-left" v-else><i class="fa fa-calendar"></i>{{currentEvent.start_date | moment("MMM D", timezone)}}</p>
 					</div>
 					<social-sharing :url="$root.shareURL('events',currentEvent.slug)" :title="currentEvent.title" :description="currentEvent.body" :quote="_.truncate(currentEvent.description, {'length': 99})" :twitter-user="$root.twitter_user" :media="currentEvent.image_url" inline-template >
-						<div class="blog-social-share" style="margin: 0">
+						<div class="blog-social-share" style="margin: 0 auto 15px">
 							<div class="social_share">
 								<network network="facebook">
 									<i class="fa fa-facebook social_icons" aria-hidden="true"></i>
