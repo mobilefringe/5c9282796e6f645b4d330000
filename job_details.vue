@@ -10,8 +10,8 @@
 			</div>
 		</div>
 		<div class="site_container">
-		    <div class="col-sm-12">
-    			<router-link class="router_active" to="/jobs"><i class="fa fa-angle-left"></i> {{$t("jobs_page.back_to_jobs")}}</router-link>
+		    <div class="col-sm-12 .router_active">
+    			<router-link to="/jobs"><i class="fa fa-angle-left"></i> {{$t("jobs_page.back_to_jobs")}}</router-link>
 		    </div>
 			<div class="row">
 				<div class="col-sm-4 promo_logo_container hidden_phone">
