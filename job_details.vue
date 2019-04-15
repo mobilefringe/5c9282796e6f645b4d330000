@@ -10,7 +10,7 @@
 			</div>
 		</div>
 		<div class="site_container">
-		    <div class="col-sm-12 .router_active">
+		    <div class="col-sm-12 router_active">
     			<router-link to="/jobs"><i class="fa fa-angle-left"></i> {{$t("jobs_page.back_to_jobs")}}</router-link>
 		    </div>
 			<div class="row">
