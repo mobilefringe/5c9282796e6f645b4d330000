@@ -26,7 +26,7 @@
                                         <h2 class="store_details_name">{{ promo.store.name }}</h2>
                                     </div>    
                                 </div>
-                                <img v-else class="store_details_image center-block" :src="promo.store.store_front_url_abs" :alt="promo.store.name + ' Logo'" />
+                                <img v-else class="store_details_image center-block nana" :src="promo.store.store_front_url_abs" :alt="promo.store.name + ' Logo'" />
                                 </div>
     						</div>
 						<div class="col-sm-6 col-md-9 event_dets_container">
