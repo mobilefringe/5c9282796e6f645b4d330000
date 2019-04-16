@@ -113,6 +113,7 @@
                         this.pageBanner.image_url = "";
                     }
                     this.promos = this.promotions;
+                    console.log(this.promos)
                 });
             },
             computed: {
