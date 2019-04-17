@@ -144,6 +144,15 @@
                         return true
                     }
                     return false
+                },
+                checkPromoImage(result) {
+                    if(result.promo_image_url_abs){
+                        // this is a store with no image
+                        if(_.includes(result.promo_image_url_abs,'missing')){
+                            return true
+                        }
+                    } else {
+                    return false
                 }
             }
         });
