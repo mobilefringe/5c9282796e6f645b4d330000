@@ -104,24 +104,6 @@ define([], function() {
             // }]
         },
         {
-            path: '/bcc-bee-hives',
-            component: view('default'),
-            children: [{
-                path: '',
-                component: view('bees'),
-                name: 'bees'
-            }]
-        },
-        {
-            path: '/rewards_club',
-            component: view('default'),
-            children: [{
-                path: '',
-                component: view('rewards_club'),
-                name: 'rewardsClub'
-            }]
-        },
-        {
             path: '/contest',
             component: view('default'),
             children: [{
@@ -213,11 +195,6 @@ define([], function() {
                     name: 'search-results'
                 }
             ]
-        },
-        {
-            path: '/404',
-            name: '404',
-            component: view('notfoundcomponent')
         },
         {
             path: '*',
