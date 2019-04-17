@@ -62,7 +62,7 @@
             <div style="padding-top: 40px;"></div>    
         </div>
         <div style="margin-bottom:-40px">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.9306784648575!2d-99.96527988429594!3d49.824968079393955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52e79a09bc6a6157%3A0xb9454eea281f5911!2sShoppers+Mall!5e0!3m2!1sen!2sca!4v1555528685760!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.9306784648575!2d-99.96527988429594!3d49.824968079393955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52e79a09bc6a6157%3A0xb9454eea281f5911!2sShoppers+Mall!5e0!3m2!1sen!2sca!4v1555528685760!5m2!1sen!2sca" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </div>
 </template>
