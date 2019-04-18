@@ -16,11 +16,15 @@
     				    <i class="fa fa-angle-left"></i> 
     				    {{$t("events_page.back_to_events")}}
     				</router-link>
-					<h3 class="promo_name" style="margin: 20px auto 0px;"  v-if="locale=='en-ca'">{{currentEvent.name}}</h3>
-					<h3 class="promo_name" style="margin: 20px auto 0px;"  v-else>{{currentEvent.name_2}}</h3>
+					<h3 class="promo_name" style="margin: 20px auto 0px;">{{currentEvent.name}}</h3>
 					<div class="row">
-						<p class="promo_div_date pull-left" v-if="isMultiDay(currentEvent)"><i class="fa fa-calendar"></i>{{currentEvent.start_date | moment("MMM D", timezone)}} - {{currentEvent.end_date | moment("MMM D", timezone)}}</p>
-						<p class="promo_div_date pull-left" v-else><i class="fa fa-calendar"></i>{{currentEvent.start_date | moment("MMM D", timezone)}}</p>
+					    <p class="event_dates" v-if="!currentEvent.no_end_date">
+						    <span v-if="isMultiDay(currentEvent)"><i class="fa fa-calendar"></i>{{ currentEvent.start_date | moment("MMM D", timezone) }} - {{ currentEvent.end_date | moment("MMM D", timezone) }}</span>
+						    <span v-else><i class="fa fa-calendar"></i>{{ currentEvent.start_date | moment("MMM D", timezone) }}</span>
+					    </p>
+						    
+						<!--<p class="promo_div_date pull-left" v-if="isMultiDay(currentEvent)"><i class="fa fa-calendar"></i>{{currentEvent.start_date | moment("MMM D", timezone)}} - {{currentEvent.end_date | moment("MMM D", timezone)}}</p>-->
+						<!--<p class="promo_div_date pull-left" v-else><i class="fa fa-calendar"></i>{{currentEvent.start_date | moment("MMM D", timezone)}}</p>-->
 					</div>
 					<social-sharing :url="$root.shareURL('events',currentEvent.slug)" :title="currentEvent.name" :description="currentEvent.description" :quote="_.truncate(currentEvent.description, {'length': 99})" :twitter-user="$root.twitter_user" :media="currentEvent.image_url" inline-template >
 						<div class="blog-social-share" style="margin: 0 auto 15px">
