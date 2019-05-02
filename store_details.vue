@@ -179,7 +179,7 @@
                     
                     var storeHours = [];
                     var vm = this;
-                    console.log("this.currentStore.store_hours", this.currentStore.store_hours)
+                    
                     _.forEach(this.currentStore.store_hours, function (value, key) {
                         var hour = vm.findHourById(value);
                         if(hour.day_of_week === 0){
@@ -191,6 +191,7 @@
                         storeHours.push(hour);
                     });
                     this.storeHours = _.sortBy(storeHours, [function(o) { return o.order; }]);
+                    console.log("this.storeHours", this.storeHours)
                 }
             },
             
