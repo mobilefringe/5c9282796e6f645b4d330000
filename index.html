@@ -41,7 +41,7 @@
     		<div id="app" v-cloak>
     			<loader v-if="!dataLoaded"></loader>
     			<!--<div class="main_content_container" v-if="dataLoaded">-->
-    			    <h1 style="display:none;">{{property.name}}</h1>
+    			    <h1 style="display:none;" v-if="property">{{property.name}}</h1>
     			    <header-component  v-if="dataLoaded"></header-component>
     				<transition name="custom-classes-transition" enter-active-class="fadeIn">
     					<router-view class="router_content" :locale="locale"  v-if="dataLoaded"></router-view>
@@ -60,7 +60,7 @@
     					<div class="site_container">
     						<div class="footer_logos">
     							<div class="site_logo ">
-    								<router-link to="/"><img style="color: white" :src="property_logo" :alt="property.name"/></router-link>
+    								<router-link to="/"><img v-if="property" style="color: white" :src="property_logo" :alt="property.name"/></router-link>
     							</div>
     							<div class="footer_property">
     								<a href="https://www.morguard.com/" target="_blank">
@@ -84,7 +84,7 @@
     						<div class="footer_terms">
     							<p>
     							    &copy; {{copyright_year}}
-    							    <span class="caps"> {{property.name}}</span> 
+    							    <span class="caps" v-if="property"> {{property.name}}</span> 
     							    {{$t("footer.all_rights")}}
     							    <a href="https://www.morguard.com/privacy/" target="_blank"> {{$t("footer.privacy_policy")}} </a>
     							    <span class="hidden_phone">|</span>
