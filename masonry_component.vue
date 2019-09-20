@@ -13,7 +13,7 @@
             			</div>
             		</a>
             		<router-link :to="feature.url" v-else>
-            			<img :src="feature.image_url" :alt="'Click to read about' + feature.name">
+            			<img v-lazy="feature.image_url" :alt="'Click to read about' + feature.name">
             			<div class="info">
             				<div class="content">
             					<h3 v-if="locale=='en-ca' && feature.name.length > 0"><span v-if="">{{feature.name}} </span></h3>
