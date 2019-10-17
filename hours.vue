@@ -109,11 +109,20 @@
                 },
                 reducedHolidays () {
                     var holidayHours = this.holidayHours;
+                    
+                    
                     var todayHours = this.todaysHours;
+                    
                     console.log(holidayHours, todayHours)
-                    const futureDates = holidayHours.filter(holidayHour => moment(holidayHour).isAfter(todayHours))
+                    // const futureDates = holidayHours.filter(holidayHour => moment(holidayHour).isAfter(todayHours))
 
-                    console.log(futureDates);
+                    // console.log(futureDates);
+                    
+                    if (holidayHours.forEach(function(el){
+                        
+                    })
+                    
+                    
                     
                     return _.sortBy(_.filter(holidayHours, function(o) { return !o.is_closed; }), [function(o) { return o.holiday_date; }]);
                 },
