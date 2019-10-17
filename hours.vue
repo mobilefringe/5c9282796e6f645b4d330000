@@ -109,17 +109,6 @@
                 },
                 reducedHolidays () {
                     var holidayHours = this.holidayHours;
-                    const now = Date.now();
-                    if (todaysHours > holidayHours) {
-                        const futureDates = holidayHours.filter(holidayHours => {
-                          // Filter out dates in the past or falsey values
-                          return holidayHours && (new Date(holidayHours)).getTime() > now;
-                        });
-                        
-                        // Do something with the result
-                        console.log(holidayHours);
-                    }
-                    
                     return _.sortBy(_.filter(holidayHours, function(o) { return !o.is_closed; }), [function(o) { return o.holiday_date; }]);
                 },
                 closeHolidays () {
