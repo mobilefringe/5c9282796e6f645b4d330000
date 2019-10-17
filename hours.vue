@@ -110,6 +110,7 @@
                 reducedHolidays () {
                     var holidayHours = this.holidayHours;
                     var todayHours = this.todaysHours;
+                    console.log(holidayHours, todayHours)
                     const futureDates = holidayHours.filter(holidayHour => moment(holidayHour).isAfter(todayHours))
 
                     console.log(futureDates);
