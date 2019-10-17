@@ -105,7 +105,7 @@
                     return this.getTodayHours;
                 },
                 holidayHours () {
-                    if (holidayHours > todaysHours) {
+                    if (this.holidayHours > this.todaysHours) {
                         return this.getPropertyHolidayHours;   
                     }
                 },
