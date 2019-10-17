@@ -105,13 +105,13 @@
                     return this.getTodayHours;
                 },
                 holidayHours () {
-                    if (this.holidayHours > this.todaysHours) {
-                        return this.getPropertyHolidayHours;   
-                    }
+                    return this.getPropertyHolidayHours;   
                 },
                 reducedHolidays () {
                     var holidayHours = this.holidayHours;
-                    
+                    const futureDates = holidayHours.filter(holidayHour => moment(holidayHour).isAfter())
+
+                    console.log(futureDates);
                     
                     return _.sortBy(_.filter(holidayHours, function(o) { return !o.is_closed; }), [function(o) { return o.holiday_date; }]);
                 },
