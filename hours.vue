@@ -113,7 +113,7 @@
                     console.log(holidayHours, todayHours)
                     const futureDates = holidayHours.filter(holidayHour => moment(holidayHour).isAfter(todayHours))
 
-                    // console.log(futureDates);
+                    console.log(futureDates);
                     
                     return _.sortBy(_.filter(holidayHours, function(o) { return !o.is_closed; }), [function(o) { return o.holiday_date; }]);
                 },
