@@ -33,7 +33,7 @@
         }
       },
         metaInfo () {
-           return {
+            return {
               title: this.meta.meta_title,
               meta: [
                  { name: 'description', vmid: 'description', content: this.meta.meta_description },
