@@ -121,6 +121,7 @@
                 dropDownCats() {
                     var cats = _.map(this.processedCategories, 'name');
                     cats.unshift('All');
+                    console.log(cats)
                     return cats;
                 },
                 filterStores() {
