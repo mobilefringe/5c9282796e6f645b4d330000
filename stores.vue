@@ -119,8 +119,10 @@
                     return this.processedCategories;
                 },
                 dropDownCats() {
-                    var cats = _.map(this.processedCategories, 'name');
-                    cats.shift();
+                    var cats = _.filter(this.processedCategories, function(o) {
+                        return o.store_ids !== null && o.name
+                    })
+                    cats = _.map(cats, 'name');
                     cats.unshift('All');
                     return cats;
                 },
