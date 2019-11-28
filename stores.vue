@@ -120,6 +120,7 @@
                 },
                 dropDownCats() {
                     var cats = _.map(this.processedCategories, 'name');
+                    cats.shift('All');
                     cats.unshift('All');
                     console.log(cats)
                     return cats;
