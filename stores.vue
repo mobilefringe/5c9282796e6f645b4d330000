@@ -65,6 +65,7 @@
                     dataloaded: false,
                     pageBanner : null,
                     search_result : null,
+                    currentPage: null
                 }
             },
             created (){
@@ -80,13 +81,18 @@
                         this.pageBanner = {};
                         this.pageBanner.image_url = "";
                     }
+                    
+                    this.currentPage = response[1].data
                 });
             },
             methods: {
                 loadData: async function() {
                     try {
                         // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
-                        let results = await Promise.all([this.$store.dispatch("getData", "categories"), this.$store.dispatch("getData", "repos")]);
+                        let results = await Promise.all([
+                            this.$store.dispatch("getData", "categories"), this.$store.dispatch("getData", "repos"),
+                            this.$store.dispatch("LOAD_PAGE_DATA", { url: this.property.mm_host + "/pages/shoppersmall-hours-note.json" })
+                        ]);
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }
