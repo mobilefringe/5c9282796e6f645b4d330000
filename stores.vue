@@ -81,7 +81,7 @@
                         this.pageBanner = {};
                         this.pageBanner.image_url = "";
                     }
-                    
+                    console.log(response[1].data)
                     this.currentPage = response[1].data
                 });
             },
