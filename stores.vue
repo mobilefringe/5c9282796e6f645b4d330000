@@ -81,7 +81,7 @@
                         this.pageBanner = {};
                         this.pageBanner.image_url = "";
                     }
-                    console.log(response)
+                    console.log(response[2].data)
                     // this.currentPage = response[1].data
                 });
             },
@@ -89,7 +89,8 @@
                 loadData: async function() {
                     try {
                         let results = await Promise.all([
-                            this.$store.dispatch("getData", "categories"), this.$store.dispatch("getData", "repos"),
+                            this.$store.dispatch("getData", "categories"), 
+                            this.$store.dispatch("getData", "repos"),
                             this.$store.dispatch("LOAD_PAGE_DATA", { url: this.property.mm_host + "/pages/shoppersmall-hours-note.json" })
                         ]);
                         return results;
