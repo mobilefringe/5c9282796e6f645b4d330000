@@ -9,6 +9,11 @@
 			</div>
 		</div>
 		<div class="site_container page_content">
+		    <div class="row" v-if="currentPage">
+                <div class="col-sm-12">
+                    <div class="margin_20" v-html="currentPage.body"></div>
+                </div>
+            </div>
 			<div class="row bold">
 				<div class="col-sm-6 col-md-4">
 					<div class="store_search" >
