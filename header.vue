@@ -7,9 +7,9 @@
     					<div class="mobile_site_logo visible_phone">
     					    <router-link to="/"><img :src="property_logo" :alt="property.name"/></router-link>
     				    </div>
-    					<div id="home_hours_container" class="hidden_phone" v-if="todays_hours">
-    						<router-link to="hours" class="open_now"><span v-if="todays_hours.is_closed == null || !todays_hours.is_closed ">{{$t("header.open_today")}}</span><span v-else>{{$t("header.closed")}}</span> <span v-if="todays_hours.is_closed == null || !todays_hours.is_closed "><span style="margin:0 20px">|</span> {{todays_hours.open_time | moment("h:mma", timezone)}} - {{todays_hours.close_time | moment("h:mma", timezone)}} </span></router-link>
-    					</div>
+    					<!--<div id="home_hours_container" class="hidden_phone" v-if="todays_hours">-->
+    					<!--	<router-link to="hours" class="open_now"><span v-if="todays_hours.is_closed == null || !todays_hours.is_closed ">{{$t("header.open_today")}}</span><span v-else>{{$t("header.closed")}}</span> <span v-if="todays_hours.is_closed == null || !todays_hours.is_closed "><span style="margin:0 20px">|</span> {{todays_hours.open_time | moment("h:mma", timezone)}} - {{todays_hours.close_time | moment("h:mma", timezone)}} </span></router-link>-->
+    					<!--</div>-->
     				</div>
     				<div class="col-md-8 col-sm-6 hidden_phone text-right">
     					<div class="header_social">
