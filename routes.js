@@ -124,6 +124,15 @@ define([], function() {
             }]
         },
         {
+            path: '/positivity_path',
+            component: view('default'),
+            children: [{
+                path: '',
+                component: view('positivity_path'),
+                name: 'positivityPath'
+            }]
+        },
+        {
             path: '/newsletter',
             component: view('default'),
             children: [{
