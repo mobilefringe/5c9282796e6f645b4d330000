@@ -16,9 +16,6 @@
                     <div class="text-left contact_us_body" v-html="currentPage.body"></div>
                 </div> 
                 <div class="col-sm-6 contact_contents">
-                    <div class="description_text text_left caps">
-                        CONTACT US FOR QUESTIONS, COMMENTS AND MORE INFORMATION.
-                    </div>
                     <form class="form-horizontal padding_top_20" action="form-submit" @submit.prevent="validateBeforeSubmit">
                         <div class="form-group ">
                             <div class="col-sm-12" :class="{'has-error': errors.has('name')}">
