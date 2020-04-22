@@ -137,7 +137,8 @@
                         send_data.append("custom[Words of Wisdom]", this.form_data.message);
                         
                         console.log("this.form_data", this.form_data)
-                        // send_data.form_data = JSON.stringify(Utility.serializeObject(this.form_data));
+                        send_data = {};
+                        send_data.form_data = JSON.stringify(Utility.serializeObject(contact_form));
                         this.$store.dispatch("CONTACT_US", send_data).then(res => {
                             this.formSuccess = true;
                         }).catch(error => {
