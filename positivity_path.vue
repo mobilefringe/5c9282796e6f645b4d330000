@@ -44,11 +44,12 @@
                                     Yes, I would like my First Initial and Last Name included on the Positivity Path Decal!
                                 </label>
     					    </div>
-    					    <div class="col-sm-12">
+    					    <div class="col-sm-12" :class="{'has-error': errors.has('agree')}">
     					        <label class="label">
                                     <input name="agree_rules" required type="checkbox">
                                     Yes, I have read and agree to the <a href="/pages/shoppersmall-positivity-path-rules-regulations" target="_blank">Promotion Rules & Regulations</a>.
                                 </label>
+                                <span v-show="errors.has('agree')" class="form-control-feedback">{{ errors.first('agree') }}</span>
     					    </div>
                         </div>
                         <div class="form-group account-btn text-left m-t-10">
