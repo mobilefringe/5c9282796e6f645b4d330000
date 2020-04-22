@@ -33,12 +33,12 @@
                                 <input v-model="form_data.email" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email" placeholder="Email" data-vv-delay="500" id="contact_email">
                                 <span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
                             </div>
-                            <div class="col-xs-12" :class="{'has-error': errors.has('message')}">
+                            <div class="col-sm-12" :class="{'has-error': errors.has('message')}">
                                 <label class="label" for="contact_message">My words of wisdom, sincere statement, or positive phrase</label>
                                 <input v-model="form_data.message" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="message" type="text" placeholder="Max. 50 characters" data-vv-delay="500" id="contact_message" maxlength="50">
                                 <span v-show="errors.has('message')" class="form-control-feedback">{{ errors.first('message') }}</span>
                             </div>
-                            <div class="col-xs-12">
+                            <div class="col-sm-12">
     					        <label class="checkbox">
                                     <input name="agree_newsletter" required  type="checkbox">
                                     I would like my First Name Initial and Last Name included on the Positivity Path Decal 
