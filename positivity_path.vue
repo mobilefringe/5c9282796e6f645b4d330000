@@ -109,10 +109,9 @@
                 });
             },
             mounted () {
-                //creating random validation num 
-                this.correctValNum = Utility.rannumber();//this.rannumber;
-                //ensuring the variables are created in this order for email
+                // Ensure the variables are created in this order for email
                 this.form_data.name = null;
+                this.form_data.phone = null;
                 this.form_data.email = null;
                 this.form_data.subject = this.property.name + ' Contact Us Form';
                 this.form_data.message = null;
@@ -129,7 +128,14 @@
                     this.$validator.validateAll().then((result) => {
                         let errors = this.errors;
                         send_data = {};
-                        send_data.form_data = JSON.stringify(Utility.serializeObject(this.form_data));
+                        send_data.append("mailto", "caitlin@mobilefringe.com");
+                        send_data.append("from_email", this.form_data.email);
+                        send_data.append("subject", this.property.name + " Positivity Path");
+                        send_data.append("custom[Name]", this.form_data.name);
+                        send_data.append("custom[Email]", this.form_data.email);
+                        send_data.append("custom[Phone]", this.form_data.phone);
+                        send_data.append("custom[Words of Wisdom]", this.form_data.message);
+                        // send_data.form_data = JSON.stringify(Utility.serializeObject(this.form_data));
                         this.$store.dispatch("CONTACT_US", send_data).then(res => {
                             this.formSuccess = true;
                         }).catch(error => {
@@ -148,18 +154,16 @@
                                 this.formError = true;
                             }
                         })
-                        
                     })
                 },
                 loadData: async function() {
                     try {
-                        // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
                         let results = await Promise.all([this.$store.dispatch("getData", "repos")]);
                         return results;
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }
-                },
+                }
             }
         });
     });
