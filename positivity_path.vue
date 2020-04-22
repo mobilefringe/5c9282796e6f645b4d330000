@@ -108,14 +108,6 @@
                     this.currentPage = response.data;
                 });
             },
-            // mounted () {
-            //     // Ensure the variables are created in this order for email
-            //     this.form_data.name = null;
-            //     this.form_data.phone = null;
-            //     this.form_data.email = null;
-            //     this.form_data.subject = this.property.name + ' Positivity Path Submission';
-            //     this.form_data.words_of_wisdom = null;
-            // },
             computed: {
                 ...Vuex.mapGetters([
                     'property',
