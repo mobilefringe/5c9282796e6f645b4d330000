@@ -47,7 +47,7 @@
     					    <div class="col-sm-12">
     					        <label class="label">
                                     <input name="agree_rules" type="checkbox">
-                                    Yes, I have read and agree to the <a href="" target="_blank">promotion rules & regulations</a>.
+                                    Yes, I have read and agree to the <a href="/pages/shoppersmall-positivity-path-rules-regulations" target="_blank">Promotion Rules & Regulations</a>.
                                 </label>
     					    </div>
                         </div>
