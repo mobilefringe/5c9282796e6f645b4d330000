@@ -113,7 +113,7 @@
                 this.form_data.name = null;
                 this.form_data.phone = null;
                 this.form_data.email = null;
-                this.form_data.subject = this.property.name + ' Contact Us Form';
+                this.form_data.subject = this.property.name + ' Positivity Path Submission';
                 this.form_data.message = null;
             },
             computed: {
