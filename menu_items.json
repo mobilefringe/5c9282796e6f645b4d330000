@@ -56,7 +56,7 @@
         "id": "path_link"
     },
     {
-        "name": "header.about_us",
+        "name": "header.contact_us",
         "href": "",
         "id": "contact_link",
         "open_dropdown": false,
@@ -76,15 +76,7 @@
             {
                 "name": "header.press_releases",
                 "href": "/pages/shoppersmall-press-releases"
-            }
-        ]
-    },
-    {
-        "name": "header.contact_us",
-        "href": "",
-        "id": "contact_link",
-        "open_dropdown": false,
-        "sub_menu": [
+            },
             {
                 "name": "header.contact_us",
                 "href": "/contact_us"
