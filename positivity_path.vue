@@ -134,8 +134,8 @@
                         // send_data.append("from_email", this.form_data.email);
              
                         contact_form["Name"] = this.form_data.name;
-                        contact_form["Email"] = this.form_data.email;
                         contact_form["Phone"] = this.form_data.phone;
+                        contact_form["Email"] = this.form_data.email;
                         contact_form["Words of Wisdom"] = this.form_data.message;
                         
                         console.log("this.form_data", this.form_data)
