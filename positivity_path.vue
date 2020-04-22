@@ -46,7 +46,7 @@
     					    </div>
     					    <div class="col-sm-12">
     					        <label class="label">
-                                    <input name="agree_rules" type="checkbox">
+                                    <input name="agree_rules" required type="checkbox">
                                     Yes, I have read and agree to the <a href="/pages/shoppersmall-positivity-path-rules-regulations" target="_blank">Promotion Rules & Regulations</a>.
                                 </label>
     					    </div>
