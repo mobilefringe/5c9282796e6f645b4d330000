@@ -26,6 +26,11 @@
                                 <input v-model="form_data.name" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="name" type="text" placeholder="Name" data-vv-delay="500" id="contact_name">
                                 <span v-show="errors.has('name')" class="form-control-feedback">{{ errors.first('name') }}</span>
                             </div>
+                            <div class="col-sm-12" :class="{'has-error': errors.has('phone')}">
+                                <label class="label" for="contact_phone">Phone Number</label>
+                                <input v-model="form_data.phone" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="name" type="text" placeholder="Phone Number" data-vv-delay="500" id="contact_phone">
+                                <span v-show="errors.has('phone')" class="form-control-feedback">{{ errors.first('phone') }}</span>
+                            </div>
                             <div class="col-sm-12" :class="{'has-error': errors.has('email')}">
                                 <label class="label" for="contact_email">Email</label>
                                 <input v-model="form_data.email" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email" placeholder="Email" data-vv-delay="500" id="contact_email">
