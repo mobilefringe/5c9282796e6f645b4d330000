@@ -114,7 +114,7 @@
                 this.form_data.phone = null;
                 this.form_data.email = null;
                 this.form_data.subject = this.property.name + ' Positivity Path Submission';
-                this.form_data.message = null;
+                this.form_data.words_of_wisdom = null;
             },
             computed: {
                 ...Vuex.mapGetters([
