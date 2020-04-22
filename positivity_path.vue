@@ -108,14 +108,14 @@
                     this.currentPage = response.data;
                 });
             },
-            mounted () {
-                // Ensure the variables are created in this order for email
-                this.form_data.name = null;
-                this.form_data.phone = null;
-                this.form_data.email = null;
-                this.form_data.subject = this.property.name + ' Positivity Path Submission';
-                this.form_data.words_of_wisdom = null;
-            },
+            // mounted () {
+            //     // Ensure the variables are created in this order for email
+            //     this.form_data.name = null;
+            //     this.form_data.phone = null;
+            //     this.form_data.email = null;
+            //     this.form_data.subject = this.property.name + ' Positivity Path Submission';
+            //     this.form_data.words_of_wisdom = null;
+            // },
             computed: {
                 ...Vuex.mapGetters([
                     'property',
@@ -128,14 +128,15 @@
                     this.$validator.validateAll().then((result) => {
                         let errors = this.errors;
                         var contact_form = {};
+                        contact_form.email = this.form_data.email;
                         contact_form.subject = "Positivity Path Submission";
-                        send_data.append("mailto", "caitlin@mobilefringe.com");
-                        send_data.append("from_email", this.form_data.email);
+                        // send_data.append("mailto", "caitlin@mobilefringe.com");
+                        // send_data.append("from_email", this.form_data.email);
              
-                        send_data.append("custom[Name]", this.form_data.name);
-                        send_data.append("custom[Email]", this.form_data.email);
-                        send_data.append("custom[Phone]", this.form_data.phone);
-                        send_data.append("custom[Words of Wisdom]", this.form_data.message);
+                        contact_form["Name"] = this.form_data.name;
+                        contact_form["Email"] = this.form_data.email;
+                        contact_form["Phone"] = this.form_data.phone;
+                        contact_form["Words of Wisdom"] = this.form_data.message;
                         
                         console.log("this.form_data", this.form_data)
                         send_data = {};
