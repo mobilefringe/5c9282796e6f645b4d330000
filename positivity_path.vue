@@ -39,9 +39,9 @@
                                 <span v-show="errors.has('message')" class="form-control-feedback">{{ errors.first('message') }}</span>
                             </div>
                             <div class="col-sm-12">
-    					        <label class="checkbox">
-                                    <input name="agree_newsletter" required  type="checkbox">
-                                    I would like my First Name Initial and Last Name included on the Positivity Path Decal 
+    					        <label class="label">
+                                    <input name="agree_name" type="checkbox">
+                                    Yes, I would like my First Initial and Last Name included on the Positivity Path Decal!
                                 </label>
     					    </div>
                         </div>
