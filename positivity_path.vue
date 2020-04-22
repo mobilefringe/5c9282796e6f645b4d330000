@@ -35,7 +35,7 @@
                             </div>
                             <div class="col-xs-12" :class="{'has-error': errors.has('message')}">
                                 <label class="label" for="contact_message">My words of wisdom</label>
-                                <textarea v-model="form_data.message" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="message" type="text" placeholder="Message" data-vv-delay="500" id="contact_message"></textarea>
+                                <textarea v-model="form_data.message" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="message" type="text" placeholder="Message" data-vv-delay="500" id="contact_message" col="3"></textarea>
                                 <span v-show="errors.has('message')" class="form-control-feedback">{{ errors.first('message') }}</span>
                             </div>
                         </div>
