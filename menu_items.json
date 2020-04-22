@@ -51,6 +51,11 @@
         ]
     },
     {
+        "name": "header.path",
+        "href": "/positivity_path",
+        "id": "path_link"
+    },
+    {
         "name": "header.about_us",
         "href": "",
         "id": "contact_link",
