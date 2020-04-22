@@ -128,17 +128,11 @@
                     this.$validator.validateAll().then((result) => {
                         let errors = this.errors;
                         var contact_form = {};
-                        contact_form.email = this.form_data.email;
-                        contact_form.subject = "Positivity Path Submission";
-                        // send_data.append("mailto", "caitlin@mobilefringe.com");
-                        // send_data.append("from_email", this.form_data.email);
-             
                         contact_form["Name"] = this.form_data.name;
                         contact_form["Phone"] = this.form_data.phone;
                         contact_form["Email"] = this.form_data.email;
                         contact_form["Words of Wisdom"] = this.form_data.message;
-                        
-                        console.log("this.form_data", this.form_data)
+
                         send_data = {};
                         send_data.form_data = JSON.stringify(Utility.serializeObject(contact_form));
                         this.$store.dispatch("CONTACT_US", send_data).then(res => {
