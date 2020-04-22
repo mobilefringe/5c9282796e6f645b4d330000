@@ -46,7 +46,7 @@
     					    </div>
     					    <div class="col-sm-12">
     					        <label class="label">
-                                    <input name="agree_name" type="checkbox">
+                                    <input name="agree_rules" type="checkbox">
                                     Yes, I have read and agree to the <a href="" target="_blank">promotion rules & regulations</a>.
                                 </label>
     					    </div>
