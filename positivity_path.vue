@@ -135,25 +135,27 @@
                         send_data.append("custom[Email]", this.form_data.email);
                         send_data.append("custom[Phone]", this.form_data.phone);
                         send_data.append("custom[Words of Wisdom]", this.form_data.message);
+                        
+                        console.log("this.form_data", this.form_data)
                         // send_data.form_data = JSON.stringify(Utility.serializeObject(this.form_data));
-                        this.$store.dispatch("CONTACT_US", send_data).then(res => {
-                            this.formSuccess = true;
-                        }).catch(error => {
-                            try {
-                                if (error.response.status == 401) {
-                                    console.log("Data load error: " + error.message);
-                                    this.formError = true;
-                                } 
-                                else {
-                                    console.log("Data load error: " + error.message);
-                                    this.formError = true;
-                                }
-                            } 
-                            catch (e) {
-                                console.log("Data load error: " + error.message);
-                                this.formError = true;
-                            }
-                        })
+                        // this.$store.dispatch("CONTACT_US", send_data).then(res => {
+                        //     this.formSuccess = true;
+                        // }).catch(error => {
+                        //     try {
+                        //         if (error.response.status == 401) {
+                        //             console.log("Data load error: " + error.message);
+                        //             this.formError = true;
+                        //         } 
+                        //         else {
+                        //             console.log("Data load error: " + error.message);
+                        //             this.formError = true;
+                        //         }
+                        //     } 
+                        //     catch (e) {
+                        //         console.log("Data load error: " + error.message);
+                        //         this.formError = true;
+                        //     }
+                        // })
                     })
                 },
                 loadData: async function() {
