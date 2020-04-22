@@ -38,6 +38,12 @@
                                 <input v-model="form_data.message" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="message" type="text" placeholder="Max. 50 characters" data-vv-delay="500" id="contact_message" maxlength="50">
                                 <span v-show="errors.has('message')" class="form-control-feedback">{{ errors.first('message') }}</span>
                             </div>
+                            <div class="col-xs-12">
+    					        <label class="checkbox">
+                                    <input name="agree_newsletter" required  type="checkbox">
+                                    I would like my First Name Initial and Last Name included on the Positivity Path Decal 
+                                </label>
+    					    </div>
                         </div>
                         <div class="form-group account-btn text-left m-t-10">
                             <div class="col-xs-12">
