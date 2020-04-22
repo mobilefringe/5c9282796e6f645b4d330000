@@ -44,6 +44,12 @@
                                     Yes, I would like my First Initial and Last Name included on the Positivity Path Decal!
                                 </label>
     					    </div>
+    					    <div class="col-sm-12">
+    					        <label class="label">
+                                    <input name="agree_name" type="checkbox">
+                                    Yes, I have read and agree to the <a href="" target="_blank">promotion rules & regulations</a>.
+                                </label>
+    					    </div>
                         </div>
                         <div class="form-group account-btn text-left m-t-10">
                             <div class="col-xs-12">
