@@ -122,7 +122,7 @@
                         var path_decal ="";
                         console.log("this.form_data.path_decal", this.form_data.path_decal)
                         if (this.form_data.path_decal) {
-                            
+                            console.log("Yes")
                         } else {
                             
                         }
