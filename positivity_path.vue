@@ -40,7 +40,7 @@
                             </div>
                             <div class="col-sm-12">
     					        <label class="label">
-                                    <input name="agree_name" type="checkbox">
+                                    <input name="agree_name" type="checkbox" v-model="form_data.path_decal">
                                     Yes, I would like my First Initial and Last Name included on the Positivity Path Decal!
                                 </label>
     					    </div>
@@ -62,7 +62,7 @@
                     <div id="send_contact_success" class="alert alert-success text-left" role="alert" v-show="formSuccess">
                         <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                         <span class="sr-only">Success</span>
-                        Thank you for your submission! A member from our team will contact you shortly.
+                        Thank you for your submission!
                     </div>
                     <div id="send_contact_error" class="alert alert-danger text-left" role="alert" v-show="formError">
                         <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
@@ -124,25 +124,26 @@
                         contact_form["Phone"] = this.form_data.phone;
                         contact_form["Email"] = this.form_data.email;
                         contact_form["Words of Wisdom"] = this.form_data.message;
+                        contact_form["I would like my First Initial and Last Name included on the Positivity Path Decal"] = this.form_data.path_decal;
 
                         send_data = {};
-                        send_data.form_data = JSON.stringify(Utility.serializeObject(contact_form));
-                        this.$store.dispatch("CONTACT_US", send_data).then(res => {
-                            this.formSuccess = true;
-                        }).catch(error => {
-                            try {
-                                if (error.response.status == 401) {
-                                    console.log("Data load error: " + error.message);
-                                    this.formError = true;
-                                } else {
-                                    console.log("Data load error: " + error.message);
-                                    this.formError = true;
-                                }
-                            } catch (e) {
-                                console.log("Data load error: " + error.message);
-                                this.formError = true;
-                            }
-                        })
+                        // send_data.form_data = JSON.stringify(Utility.serializeObject(contact_form));
+                        // this.$store.dispatch("CONTACT_US", send_data).then(res => {
+                        //     this.formSuccess = true;
+                        // }).catch(error => {
+                        //     try {
+                        //         if (error.response.status == 401) {
+                        //             console.log("Data load error: " + error.message);
+                        //             this.formError = true;
+                        //         } else {
+                        //             console.log("Data load error: " + error.message);
+                        //             this.formError = true;
+                        //         }
+                        //     } catch (e) {
+                        //         console.log("Data load error: " + error.message);
+                        //         this.formError = true;
+                        //     }
+                        // })
                     })
                 },
                 loadData: async function() {
