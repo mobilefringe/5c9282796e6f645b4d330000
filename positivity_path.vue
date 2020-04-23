@@ -127,7 +127,8 @@
                         contact_form["I would like my First Initial and Last Name included on the Positivity Path Decal"] = this.form_data.path_decal;
 
                         send_data = {};
-                        // send_data.form_data = JSON.stringify(Utility.serializeObject(contact_form));
+                        send_data.form_data = JSON.stringify(Utility.serializeObject(contact_form));
+                        console.log("send_data.form_data", send_data.form_data)
                         // this.$store.dispatch("CONTACT_US", send_data).then(res => {
                         //     this.formSuccess = true;
                         // }).catch(error => {
