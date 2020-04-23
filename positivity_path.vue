@@ -107,6 +107,7 @@
                 this.$store.dispatch('LOAD_PAGE_DATA', {url: this.property.mm_host + "/pages/" + this.$root.subdomain + "-positivity-path.json"}).then(response => {
                     this.currentPage = response.data;
                 });
+                this.form_data.path_decal = false;
             },
             computed: {
                 ...Vuex.mapGetters([
