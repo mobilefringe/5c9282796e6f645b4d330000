@@ -145,7 +145,7 @@
 
                         send_data = {};
                         send_data.form_data = JSON.stringify(Utility.serializeObject(contact_form));
-                        console.log("send_data.form_data", send_data.form_data)
+                        console.log("send_data.form_data", send_data)
 
                         // this.$store.dispatch("CONTACT_US", send_data).then(res => {
                         //     this.formSuccess = true;
