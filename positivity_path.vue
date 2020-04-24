@@ -19,7 +19,7 @@
                     <form class="form-horizontal" action="form-submit" @submit.prevent="validateBeforeSubmit">
                         <div class="form-group ">
                             <div class="col-sm-12" :class="{'has-error': errors.has('name')}">
-                                <label class="label" for="contact_name">Name</label>
+                                <label class="label" for="contact_name">Full Name</label>
                                 <input v-model="form_data.name" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="name" type="text" placeholder="Name" data-vv-delay="500" id="contact_name">
                                 <span v-show="errors.has('name')" class="form-control-feedback">{{ errors.first('name') }}</span>
                             </div>
@@ -128,7 +128,6 @@
                         // Check to see if user wants their name included.
                         var path_decal ="";
                         if (this.form_data.path_decal) {
-                            console.log("Yes")
                             path_decal = "Yes!"
                         } else {
                             path_decal = "No."
