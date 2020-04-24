@@ -129,6 +129,7 @@
                         
                         let errors = this.errors;
                         var contact_form = {};
+                        contact_form["Subject"] = "New Positivity Path Submission.";
                         contact_form["Name"] = this.form_data.name;
                         contact_form["Phone"] = this.form_data.phone;
                         contact_form["Email"] = this.form_data.email;
