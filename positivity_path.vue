@@ -136,7 +136,7 @@
                         
                         let errors = this.errors;
                         var contact_form = {};
-                        contact_form["subject"] = this.property.name + ' Positivity Path Submission';
+                        contact_form["subject"] = ' Positivity Path Submission';
                         contact_form["Name"] = this.form_data.name;
                         contact_form["Phone"] = this.form_data.phone;
                         contact_form["email"] = this.form_data.email;
