@@ -97,7 +97,7 @@
                 //ensuring the variables are created in this order for email
                 this.form_data.name = null;
                 this.form_data.email = null;
-                this.form_data.subject = this.property.name + ' Positivity Path Submission';
+                this.form_data.subject = ' Positivity Path Submission';
                 this.form_data.message = null;
             },
             created(){
@@ -145,7 +145,6 @@
 
                         send_data = {};
                         send_data.form_data = JSON.stringify(Utility.serializeObject(contact_form));
-                        console.log("send_data.form_data", send_data)
 
                         this.$store.dispatch("CONTACT_US", send_data).then(res => {
                             this.formSuccess = true;
