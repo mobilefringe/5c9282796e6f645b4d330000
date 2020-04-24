@@ -136,10 +136,10 @@
                         
                         let errors = this.errors;
                         var contact_form = {};
-                        contact_form["Subject"] = this.property.name + ' Positivity Path Submission';
+                        contact_form["subject"] = this.property.name + ' Positivity Path Submission';
                         contact_form["Name"] = this.form_data.name;
                         contact_form["Phone"] = this.form_data.phone;
-                        contact_form["Email"] = this.form_data.email;
+                        contact_form["email"] = this.form_data.email;
                         contact_form["Words of Wisdom"] = this.form_data.message;
                         contact_form["I would like my First Initial and Last Name included on the Positivity Path Decal"] = path_decal;
 
