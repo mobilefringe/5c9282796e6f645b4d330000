@@ -93,6 +93,13 @@
                     plainBanner: null
                 }
             },
+            mounted () {
+                //ensuring the variables are created in this order for email
+                this.form_data.name = null;
+                this.form_data.email = null;
+                this.form_data.subject = this.property.name + ' Positivity Path Submission';
+                this.form_data.message = null;
+            },
             created(){
                 this.loadData().then(response => {
                     this.currentPage = response[0].data;
@@ -129,7 +136,6 @@
                         
                         let errors = this.errors;
                         var contact_form = {};
-                        contact_form["Subject"] = "New Positivity Path Submission.";
                         contact_form["Name"] = this.form_data.name;
                         contact_form["Phone"] = this.form_data.phone;
                         contact_form["Email"] = this.form_data.email;
