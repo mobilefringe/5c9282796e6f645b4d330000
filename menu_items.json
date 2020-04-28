@@ -25,15 +25,6 @@
         "id": "path_link"
     },
     {
-        "name": "header.promos_events",
-        "href": "",
-        "open_dropdown": false,
-        "id": "promos_events_link",
-        "sub_menu": [
-            
-        ]
-    },
-    {
         "name": "header.services",
         "href": "",
         "open_dropdown": false,
