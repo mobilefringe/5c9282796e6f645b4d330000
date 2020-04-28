@@ -20,18 +20,17 @@
         ]
     },
     {
+        "name": "header.path",
+        "href": "/positivity_path",
+        "id": "path_link"
+    },
+    {
         "name": "header.promos_events",
         "href": "",
         "open_dropdown": false,
         "id": "promos_events_link",
-        "sub_menu": [{
-                "name": "header.events",
-                "href": "/events"
-            },
-            {
-                "name": "header.promos",
-                "href": "/promotions"
-            }
+        "sub_menu": [
+            
         ]
     },
     {
@@ -51,16 +50,19 @@
         ]
     },
     {
-        "name": "header.path",
-        "href": "/positivity_path",
-        "id": "path_link"
-    },
-    {
-        "name": "header.contact_us",
+        "name": "header.about",
         "href": "",
-        "id": "contact_link",
         "open_dropdown": false,
+        "id": "services_link",
         "sub_menu": [
+            {
+                "name": "header.events",
+                "href": "/events"
+            },
+            {
+                "name": "header.promos",
+                "href": "/promotions"
+            },
             {
                 "name": "header.history",
                 "href": "/pages/shoppersmall-history"
@@ -76,7 +78,20 @@
             {
                 "name": "header.press_releases",
                 "href": "/pages/shoppersmall-press-releases"
-            },
+            }
+        ]
+    },
+    {
+        "name": "header.hours",
+        "href": "/hours",
+        "id": "hours_link"
+    },
+    {
+        "name": "header.contact_us",
+        "href": "",
+        "id": "contact_link",
+        "open_dropdown": false,
+        "sub_menu": [
             {
                 "name": "header.contact_us",
                 "href": "/contact_us"
@@ -94,10 +109,5 @@
                 "href": "/pages/shoppersmall-leasing"
             }
         ]
-    },
-    {
-        "name": "header.hours",
-        "href": "/hours",
-        "id": "hours_link"
     }
 ]
