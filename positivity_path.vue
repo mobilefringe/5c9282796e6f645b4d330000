@@ -2,11 +2,7 @@
     <div id="contact_us_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
         <div v-if="pageBanner" class="page_header" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
 			<div class="site_container">
-				<div class="header_content">
-					<!--<h1>Positivity Path</h1>-->
-					<!--<h2 style="display:none;">Scroll to  view contact details</h2>-->
-					<!--<h3 style="display:none;">Scroll to  view contact details</h3>-->
-				</div>
+				<div class="header_content"></div>
 			</div>
 		</div>  
         <div class="margin_25_across padding_top_40 site_container">
