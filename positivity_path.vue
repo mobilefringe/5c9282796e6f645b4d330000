@@ -148,22 +148,22 @@
                         send_data = {};
                         send_data.form_data = JSON.stringify(Utility.serializeObject(contact_form));
 
-                        this.$store.dispatch("CONTACT_US", send_data).then(res => {
-                            this.formSuccess = true;
-                        }).catch(error => {
-                            try {
-                                if (error.response.status == 401) {
-                                    console.log("Data load error: " + error.message);
-                                    this.formError = true;
-                                } else {
-                                    console.log("Data load error: " + error.message);
-                                    this.formError = true;
-                                }
-                            } catch (e) {
-                                console.log("Data load error: " + error.message);
-                                this.formError = true;
-                            }
-                        })
+                        // this.$store.dispatch("CONTACT_US", send_data).then(res => {
+                        //     this.formSuccess = true;
+                        // }).catch(error => {
+                        //     try {
+                        //         if (error.response.status == 401) {
+                        //             console.log("Data load error: " + error.message);
+                        //             this.formError = true;
+                        //         } else {
+                        //             console.log("Data load error: " + error.message);
+                        //             this.formError = true;
+                        //         }
+                        //     } catch (e) {
+                        //         console.log("Data load error: " + error.message);
+                        //         this.formError = true;
+                        //     }
+                        // })
                     })
                 },
                 loadData: async function() {
