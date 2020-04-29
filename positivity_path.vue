@@ -141,7 +141,7 @@
                         contact_form["subject"] = ' Positivity Path Submission';
                         contact_form["First Name"] = this.form_data.first_name;
                         contact_form["Last Name"] = this.form_data.last_name;
-                        contact_form["Phone"] = this.form_data.phone;
+                        contact_form["Phone Number"] = this.form_data.phone;
                         contact_form["email"] = this.form_data.email;
                         contact_form["Words of Wisdom"] = this.form_data.message;
                         contact_form["I would like my First Initial and Last Name included on the Positivity Path Decal"] = path_decal;
