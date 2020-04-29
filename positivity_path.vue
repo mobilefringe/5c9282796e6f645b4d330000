@@ -28,7 +28,7 @@
                             
                             <div class="col-sm-12" :class="{'has-error': errors.has('phone')}">
                                 <label class="label" for="contact_phone">Phone Number</label>
-                                <input v-model="form_data.phone" rules="numeric" v-validate="'numeric'" class="form-control" :class="{'input': true}" name="phone number" type="text" placeholder="Phone Number" data-vv-delay="500" id="contact_phone">
+                                <input v-model="form_data.phone" rules="numeric" v-validate="'required|numeric'" class="form-control" :class="{'input': true}" name="phone number" type="text" placeholder="Phone Number" data-vv-delay="500" id="contact_phone">
                                 <span v-show="errors.has('phone')" class="form-control-feedback">{{ errors.first('phone') }}</span>
                             </div>
                             <div class="col-sm-12" :class="{'has-error': errors.has('email')}">
