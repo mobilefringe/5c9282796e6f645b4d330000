@@ -15,13 +15,13 @@
                     <form class="form-horizontal" action="form-submit" @submit.prevent="validateBeforeSubmit">
                         <div class="form-group ">
                             <div class="col-sm-12" :class="{'has-error': errors.has('first_name')}">
-                                <label class="label" for="first_name">Full Name</label>
+                                <label class="label" for="first_name">First Name</label>
                                 <input v-model="form_data.first_name" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="first name" type="text" placeholder="First Name" data-vv-delay="500" id="first_name">
                                 <span v-show="errors.has('first_name')" class="form-control-feedback">{{ errors.first('first_name') }}</span>
                             </div>
                             
                             <div class="col-sm-12" :class="{'has-error': errors.has('last_name')}">
-                                <label class="label" for="last_name">Full Name</label>
+                                <label class="label" for="last_name">Last Name</label>
                                 <input v-model="form_data.last_name" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="last name" type="text" placeholder="Last Name" data-vv-delay="500" id="last_name">
                                 <span v-show="errors.has('name')" class="form-control-feedback">{{ errors.first('name') }}</span>
                             </div>
