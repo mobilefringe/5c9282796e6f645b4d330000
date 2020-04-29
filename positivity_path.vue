@@ -3,9 +3,9 @@
         <div v-if="pageBanner" class="page_header" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
 			<div class="site_container">
 				<div class="header_content">
-					<h1>Positivity Path</h1>
-					<h2 style="display:none;">Scroll to  view contact details</h2>
-					<h3 style="display:none;">Scroll to  view contact details</h3>
+					<!--<h1>Positivity Path</h1>-->
+					<!--<h2 style="display:none;">Scroll to  view contact details</h2>-->
+					<!--<h3 style="display:none;">Scroll to  view contact details</h3>-->
 				</div>
 			</div>
 		</div>  
