@@ -8,6 +8,9 @@
 				</div>
 			</div>
 		</div>  
+		
+		 <div v-else class="page_header" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }"></div> 
+		
         <div class="margin_25_across padding_top_40 site_container">
     		<sponsorship></sponsorship>
             <div class="row"> 
@@ -96,7 +99,9 @@
                     validNumError: false,
                     currentPage : null,
                     pageBanner: null,
-                    plainBanner: null
+                    plainBanner: null,
+                    
+                    isTablet: false
                 }
             },
             mounted () {
@@ -105,6 +110,12 @@
                 this.form_data.email = null;
                 this.form_data.subject = ' Positivity Path Submission';
                 this.form_data.message = null;
+                
+                this.$nextTick(function() {
+                  window.addEventListener('resize', this.getWindowWidth)
+                  //Init
+                  this.getWindowWidth()
+                })
             },
             created(){
                 this.loadData().then(response => {
@@ -129,6 +140,15 @@
                 ]),
             },
             methods: {
+                getWindowWidth(event) {
+                  this.windowWidth = window.innerWidth
+                  if (this.windowWidth <= 468) {
+                    this.isTablet = true
+                  } else {
+                    this.isTablet = false
+                  }
+                },
+                
                 validateBeforeSubmit() {
                     this.$validator.validateAll().then((result) => {
                         // Check to see if user wants their name included.
@@ -180,5 +200,8 @@
                 }
             }
         });
+        beforeDestroy: function() {
+            window.removeEventListener('resize', this.getWindowWidth)
+        }
     });
 </script>
