@@ -69,14 +69,15 @@
             {
                 "name": "header.press_releases",
                 "href": "/pages/shoppersmall-press-releases"
+            },
+            {
+                "name": "header.hours",
+                "href": "/hours",
+                "id": "hours_link"
             }
         ]
     },
-    {
-        "name": "header.hours",
-        "href": "/hours",
-        "id": "hours_link"
-    },
+    
     {
         "name": "header.contact_us",
         "href": "",
