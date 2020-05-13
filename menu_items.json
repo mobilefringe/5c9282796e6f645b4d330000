@@ -77,7 +77,11 @@
             }
         ]
     },
-    
+    {
+        "name": "Re-Opening",
+        "href": "/pages/shoppersmall-re-opening",
+        "id": "reopen_link"
+    },
     {
         "name": "header.contact_us",
         "href": "",
