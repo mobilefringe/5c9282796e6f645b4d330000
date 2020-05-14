@@ -47,20 +47,17 @@
         "id": "services_link",
         "sub_menu": [
             {
-                "name": "header.events",
-                "href": "/events"
-            },
-            {
-                "name": "header.promos",
-                "href": "/promotions"
-            },
-            {
-                "name": "header.history",
-                "href": "/pages/shoppersmall-history"
+                "name": "header.hours",
+                "href": "/hours",
+                "id": "hours_link"
             },
             {
                 "name": "header.green_link",
                 "href": "/pages/shoppersmall-green-link"
+            },
+            {
+                "name": "header.history",
+                "href": "/pages/shoppersmall-history"
             },
             {
                 "name": "header.awards",
@@ -71,9 +68,12 @@
                 "href": "/pages/shoppersmall-press-releases"
             },
             {
-                "name": "header.hours",
-                "href": "/hours",
-                "id": "hours_link"
+                "name": "header.events",
+                "href": "/events"
+            },
+            {
+                "name": "header.promos",
+                "href": "/promotions"
             }
         ]
     },
